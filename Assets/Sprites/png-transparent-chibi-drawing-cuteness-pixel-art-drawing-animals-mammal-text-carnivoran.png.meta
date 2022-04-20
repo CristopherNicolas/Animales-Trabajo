@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: e4d75208c9c78d34488f322b67e442e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4348324626094928803
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_0
+  - first:
+      213: -5905100962758394600
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_1
+  - first:
+      213: -5945910360152097836
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_2
+  - first:
+      213: -5128220182849242024
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_3
+  - first:
+      213: 3021571163716007324
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_4
+  - first:
+      213: -1811991468442501701
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_5
+  - first:
+      213: -5458731711889227409
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_6
+  - first:
+      213: -4281360618632797270
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_7
+  - first:
+      213: -5810088443882416159
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_8
+  - first:
+      213: 7112560542676438967
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_9
+  - first:
+      213: 8412253449700881354
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_10
+  - first:
+      213: -6003805290886027728
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_11
+  - first:
+      213: -8706265167573994246
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_12
+  - first:
+      213: 202129031528826802
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_13
+  - first:
+      213: -2714858949576074508
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_14
+  - first:
+      213: 3577670441723402416
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_15
+  - first:
+      213: 7982319806621076479
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_16
+  - first:
+      213: 3881934781620913071
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_17
+  - first:
+      213: -6462636577008769454
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_18
+  - first:
+      213: -9068340709132543097
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_19
+  - first:
+      213: 3910415782382908091
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_20
+  - first:
+      213: 2052611658885527265
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_21
+  - first:
+      213: -4988776623887839626
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_22
+  - first:
+      213: 8569217857195805772
+    second: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 811
+        width: 148
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c478d7ac5a7a3c0800000000000000
+      internalID: -4348324626094928803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 811
+        width: 156
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81df7fff5fddc0ea0800000000000000
+      internalID: -5905100962758394600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 806
+        width: 153
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbb1dcb702eb7da0800000000000000
+      internalID: -5945910360152097836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 813
+        width: 119
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c38470ae6e4d8b0800000000000000
+      internalID: -5128220182849242024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_4
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 810
+        width: 136
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c953bd4e6f6cee920800000000000000
+      internalID: 3021571163716007324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_5
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 813
+        width: 164
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd327b1c538ad6e0800000000000000
+      internalID: -1811991468442501701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 538
+        width: 119
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61ceacfd60be34b0800000000000000
+      internalID: -5458731711889227409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 526
+        width: 163
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3ab03733d8594c0800000000000000
+      internalID: -4281360618632797270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_8
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 536
+        width: 135
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e759cce75b6e5fa0800000000000000
+      internalID: -5810088443882416159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_9
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 541
+        width: 120
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf40bd2124e4b260800000000000000
+      internalID: 7112560542676438967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_10
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 537
+        width: 153
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3b9f541f35eb470800000000000000
+      internalID: 8412253449700881354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 553
+        width: 120
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036a020c5e23eaca0800000000000000
+      internalID: -6003805290886027728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 310
+        width: 119
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4356635f12d2780800000000000000
+      internalID: -8706265167573994246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 310
+        width: 142
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7c113884b1ec200800000000000000
+      internalID: 202129031528826802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_14
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 310
+        width: 120
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa5a375b22e25ad0800000000000000
+      internalID: -2714858949576074508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_15
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 314
+        width: 136
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8965abf4076a130800000000000000
+      internalID: 3577670441723402416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_16
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 300
+        width: 180
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbc63d6295e6ce60800000000000000
+      internalID: 7982319806621076479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_17
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 306
+        width: 143
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa38fb3dd176fd530800000000000000
+      internalID: 3881934781620913071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 46
+        width: 175
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25622f2164a1056a0800000000000000
+      internalID: -6462636577008769454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 54
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bd0f1db28c62280800000000000000
+      internalID: -9068340709132543097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_20
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 54
+        width: 136
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2b3019f66944630800000000000000
+      internalID: 3910415782382908091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_21
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 49
+        width: 175
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e672b5bd675c7c10800000000000000
+      internalID: 2052611658885527265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_22
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 50
+        width: 167
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e846d971e44cab0800000000000000
+      internalID: -4988776623887839626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_23
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 50
+        width: 138
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c071d4d3afbe670800000000000000
+      internalID: 8569217857195805772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
