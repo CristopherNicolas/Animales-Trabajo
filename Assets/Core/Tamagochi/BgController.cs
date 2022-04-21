@@ -6,5 +6,5 @@ using DG.Tweening;
 public class BgController : MonoBehaviour
 {
    [SerializeField]Image bg;
-     
+         
 }

@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class GanarOro : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GanarOr()
     {
-        
+        GameManager.instance.dinero += 1;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
