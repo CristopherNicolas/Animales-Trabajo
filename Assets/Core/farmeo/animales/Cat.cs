@@ -8,4 +8,8 @@ public class Cat : Animal
     {
         
     }
+    public override float ObtenerOro()
+    {
+        return 10;
+    }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public float dinero;
     public static GameManager instance;
     private void Awake()
     {
@@ -14,4 +15,8 @@ public class GameManager : MonoBehaviour
 
         }
     }
+}
+enum GRUPOANIMAL
+{
+   Canino, Felino,Ave
 }

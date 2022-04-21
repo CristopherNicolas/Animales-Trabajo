@@ -7,4 +7,8 @@ using UnityEngine;
     {
         colorParaBgSystem = Color.red;
     }
+    public override float ObtenerOro()
+    {
+        return 5;
+    }
 }
