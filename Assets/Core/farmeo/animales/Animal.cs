@@ -4,13 +4,6 @@ using UnityEngine;
 
 public abstract class Animal: MonoBehaviour
 {
-    public virtual void Punch()
-    {
-       
-    }
-    public virtual void Instint()
-    {
+    public Color colorParaBgSystem;
 
-
-    }
 }

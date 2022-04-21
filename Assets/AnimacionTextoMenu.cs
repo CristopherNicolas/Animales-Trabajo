@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
 using DG.Tweening;
+using System;
 public class AnimacionTextoMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     async void Start()
     {
+        
         await Task.Delay(System.TimeSpan.FromSeconds(0.2f));
         RectTransform rectTransform = GetComponent<RectTransform>();
         rectTransform.DOMoveX(rectTransform.position.x-1800, 1.8f);
