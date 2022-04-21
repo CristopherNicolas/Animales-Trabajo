@@ -6,17 +6,27 @@ public class GameManager : MonoBehaviour
 {
     public float dinero;
     public static GameManager instance;
+    public Save partidaGuardada;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
+            SaveGame();
         }
+  
+    }
+    public void LoadGame()
+    {
+       partidaGuardada = SaveSystem.Load();
+    }
+    public void SaveGame()
+    {
+        SaveSystem.SaveData(partidaGuardada);
     }
 }
-enum GRUPOANIMAL
+public enum GRUPOANIMAL
 {
    Canino, Felino,Ave
 }

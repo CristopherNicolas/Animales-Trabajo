@@ -16,6 +16,8 @@ public class AnimacionTextoMenu : MonoBehaviour
         rectTransform.DORotate(new Vector3(0,0, rectTransform.position.z - 10), 1.8f);
         await Task.Delay(System.TimeSpan.FromSeconds(1.8f));
         rectTransform.DORotate(new Vector3(0,0, rectTransform.position.z  ), 0.4f);
+        await Task.Delay(System.TimeSpan.FromSeconds(2));
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
   

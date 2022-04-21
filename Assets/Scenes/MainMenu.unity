@@ -931,6 +931,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dinero: 0
+  partidaGuardada:
+    dinero: 0
+    animalParaTamagochi: {fileID: 1213966168113348689, guid: 7173188e8ab009e46b8ac793c53a5968, type: 3}
 --- !u!4 &1200275355
 Transform:
   m_ObjectHideFlags: 0
