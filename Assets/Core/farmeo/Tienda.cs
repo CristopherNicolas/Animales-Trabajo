@@ -8,7 +8,9 @@ public class Tienda : MonoBehaviour
 {
     bool IsOpen;
     public static Tienda instance;
-
+    public List<GameObject> terrenos;
+    public List<GameObject> animales;
+    public Sprite tiendaEmptySlot;
     public void Awake()
     {
         if  (instance == null)
@@ -32,6 +34,35 @@ public class Tienda : MonoBehaviour
     {
         GetComponent<RectTransform>().DOScale(0, 0.5f);
         IsOpen = false;
+    }
+
+
+    public void Comprar(float precio,IComprable comprable)
+    {
+        // 6 espacios posibles
+        // el primero siempre esta usado
+        //como saber si estan en uso
+        if (GameManager.instance.partidaGuardada.dinero>=precio)
+        {
+            //asignar sprite
+         
+            
+            // descontar dinero
+            GameManager.instance.partidaGuardada.dinero -=
+                comprable.GetPrecio();
+            for (int i = 0; i < terrenos.Count; i++)
+            {
+                if (terrenos[i].GetComponent<Image>().sprite.name == "UISprite")
+                {
+                    //entonces puede crear en el terreno
+                    terrenos[i].GetComponent<Image>().sprite = comprable.GetSprite(); break;
+                }
+            }
+        }
+        else
+        {
+            //no se puede copmprar
+        }
     }
 
 }

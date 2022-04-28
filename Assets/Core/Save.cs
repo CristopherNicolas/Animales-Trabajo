@@ -4,6 +4,6 @@ using UnityEngine;
 [System.Serializable]
 public class Save 
 {
-    public float dinero;
+    public float dinero,perros,gatos,patos;
     public Animal animalParaTamagochi;
 }
