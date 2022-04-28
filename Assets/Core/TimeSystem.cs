@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using System;
+using TMPro;
+    public delegate void Del();
 public class TimeSystem : MonoBehaviour
 {
     public Del dele;
+    TMP_Text textTime;
     int minutos, horas;
-    Text _minutos,_horas;
-    public delegate void Del();
     public static TimeSystem instance;
     private void Awake()
     {
@@ -17,8 +17,9 @@ public class TimeSystem : MonoBehaviour
             instance = this;
              DontDestroyOnLoad(gameObject);
               dele = new Del(AsignTexts);
-            dele += AsignVar;
+                 dele += AsignVar;
             StartCoroutine(TimeLoop());
+
         }
     }//singleton
     public IEnumerator TimeLoop()
@@ -34,11 +35,13 @@ public class TimeSystem : MonoBehaviour
     {
         try
         {
-            _horas.text = horas.ToString(); _minutos.text = minutos.ToString(); ;   
+            textTime = GameObject.Find("TimeControllerText").GetComponent<TMP_Text>();
+            textTime.text = $"{horas}:{minutos}";
         }
         catch (NullReferenceException r)
         {
-            r.ToString();
+           Debug.Log( r.ToString());
+            
             return;
             throw;
         }

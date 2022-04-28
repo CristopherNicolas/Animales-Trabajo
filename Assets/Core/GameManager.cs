@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// contiene la partida guardada,
+/// </summary>
 public class GameManager : MonoBehaviour
 {
-    public float dinero;
     public static GameManager instance;
     public Save partidaGuardada;
     private void Awake()
@@ -12,8 +13,12 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            //comprueba si es la primera vez jugando:
+             if(SaveSystem.ifIsFirstPlay())
+
              DontDestroyOnLoad(gameObject);
-            SaveGame();
+             SaveGame();
+          //  LoadGame();
         }
     }
     public void LoadGame()

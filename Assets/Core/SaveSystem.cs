@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using System.IO;
 //%userprofile%\AppData\LocalLow
 public static class SaveSystem
 {
+    public static string _fullPath;
     public static string directory = "/SaveData/", filename = "myData.txt";
     public static void SaveData(Save data)
     {
@@ -18,10 +20,12 @@ public static class SaveSystem
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(dir + filename, json);
     }
+    public static bool ifIsFirstPlay() => File.Exists(_fullPath);
     public static Save Load()
     {
         Debug.Log("LOADING");
-        string fullPath = Application.persistentDataPath + directory + filename;
+        string fullPath = Application.persistentDataPath + directory + filename; 
+        _fullPath = fullPath;
         Save data = new Save();
         if (File.Exists(fullPath))
         {

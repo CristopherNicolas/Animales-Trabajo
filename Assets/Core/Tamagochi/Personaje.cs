@@ -9,6 +9,10 @@ using System.Linq;
 public class Personaje : MonoBehaviour
 {
     public Image image;
+    public Animal tipoDeAnimal;
     public  float Diversion { get; set; }
-      
+      public void ShowMessaje()
+    {
+        UiSystem.instance.EnviarMensaje("Hola");
+    }
 }
