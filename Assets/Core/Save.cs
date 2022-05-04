@@ -5,5 +5,5 @@ using UnityEngine;
 public class Save 
 {
     public float dinero,perros,gatos,patos;
-    public Animal animalParaTamagochi;
+    public List<Animal> animalesEnTerrenos;
 }

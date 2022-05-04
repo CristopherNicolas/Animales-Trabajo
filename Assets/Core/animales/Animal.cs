@@ -9,5 +9,5 @@ public abstract class Animal: MonoBehaviour
     public Color colorParaBgSystem;
     public GRUPOANIMAL grupo;
     public virtual float ObtenerOro() => 1;
-
+    public virtual float ObtenerAlimento()=>1;
 }

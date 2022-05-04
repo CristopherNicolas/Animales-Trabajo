@@ -27,7 +27,6 @@ public class TimeSystem : MonoBehaviour
         while (true)
         {
           yield return new WaitForSecondsRealtime(1);
-            Debug.Log($"{horas}:{minutos}");
             dele();    
         }
     }

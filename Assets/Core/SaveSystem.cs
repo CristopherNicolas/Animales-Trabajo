@@ -25,6 +25,7 @@ public static class SaveSystem
     {
         Debug.Log("LOADING");
         string fullPath = Application.persistentDataPath + directory + filename; 
+        Debug.Log($"{fullPath}");
         _fullPath = fullPath;
         Save data = new Save();
         if (File.Exists(fullPath))
