@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 public delegate void Inter();
 
 public class HerramientasTamagochi : MonoBehaviour
@@ -79,24 +80,49 @@ public class HerramientasTamagochi : MonoBehaviour
     private void Awake()
     {
         inter = new Inter(DefaultEfect);
+        cursorPeineta.Resize(800, 800);
+        cursorAgua.Resize(400, 400);
+        cursorAlimento.Resize(400, 400);
+        cursorDefault.Resize(400, 400);
         AsignarCursor(eSTADOCURSOR);
+        slider.transform.DOScale(0, 0);
         
     }
     public void DefaultEfect()
     {
-        Debug.Log("defalut efect");
+        UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
     }
     public void AguaEfect()
     {
-        Debug.Log("Agua efect");
+        UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
+        
+        
     }
     public void alimentoEfect()
     {
-        Debug.Log("alimento  efect");
+        UiSystem.instance.EnviarMensaje("alimento  efect", 0.4f,1,2);
     }
+    public Slider slider;
+    public GameObject pulgaPrefab;
     public void PeinetaEfect()
     {
-        Debug.Log("Peineta efect");
+        //hacer que salten pulgas para que puedan serclickeadas 
+        int random = Random.Range(0, 2);
+        Vector2 randomPos= new Vector2(Random.Range(231,1346),Random.Range(-370,430));
+        if (random==0)
+        {
+           var obj= Instantiate(pulgaPrefab,randomPos,Quaternion.identity);
+            obj.transform.parent = GameObject.Find("Canvas").transform;
+        }
+        UiSystem.instance.EnviarMensaje("Usaste la peineta",0.4f,1,2);
+        slider.transform.GetComponent<RectTransform>().DOScale(5, 0.3f);
+        slider.value += 20;
+        if (slider.value >= 100)
+        {
+            UiSystem.instance.EnviarMensaje("animal peinado", 0.4f, 1, 2);
+            slider.value = 0;
+            slider.transform.DOScale(0, 0.5f);
+        }
     }
 }
 

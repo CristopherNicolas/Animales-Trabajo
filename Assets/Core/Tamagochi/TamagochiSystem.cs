@@ -16,10 +16,8 @@ public class TamagochiSystem : MonoBehaviour
     }
     private void Start()
     {
-        AsignarAnimal();
-        
+        AsignarAnimal();   
     }
-
     public void AsignarAnimal()
     {
         bgController.CambiarBG(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());

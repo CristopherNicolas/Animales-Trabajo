@@ -18,6 +18,11 @@ public class CambiarTamagochi : MonoBehaviour
         {
             terrenoActual = 0;
         }
+        if (terrenoActual > GameManager.instance.partidaGuardada.animalesEnTerrenos.Count)
+        {
+            terrenoActual = 0;
+            return;
+        }
             tamagochiSystem.personaje.tipoDeAnimal =
             GameManager.instance.partidaGuardada.animalesEnTerrenos[terrenoActual];
             tamagochiSystem.personaje.image.sprite = GameManager.instance.partidaGuardada.animalesEnTerrenos[terrenoActual].imagenAnimal;
