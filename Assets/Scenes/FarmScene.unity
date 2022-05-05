@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 36491880}
   - component: {fileID: 36491883}
   m_Layer: 5
-  m_Name: Terreno5
+  m_Name: Terreno4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848615167}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 36491883}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
+  animals: []
   Used: 0
 --- !u!1 &158702903
 GameObject:
@@ -355,7 +355,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 158702908}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -415,8 +415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
-  Used: 0
+  animals: []
+  Used: 1
 --- !u!1 &216685930
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 343420625}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
+  animals: []
   Used: 0
 --- !u!1 &367644773
 GameObject:
@@ -1061,6 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 848615167}
+  - component: {fileID: 848615168}
   m_Layer: 5
   m_Name: Terrenos
   m_TagString: Untagged
@@ -1082,8 +1083,8 @@ RectTransform:
   - {fileID: 158702904}
   - {fileID: 924862913}
   - {fileID: 949586680}
-  - {fileID: 1023282573}
   - {fileID: 36491879}
+  - {fileID: 1023282573}
   - {fileID: 343420621}
   m_Father: {fileID: 367644777}
   m_RootOrder: 0
@@ -1093,6 +1094,20 @@ RectTransform:
   m_AnchoredPosition: {x: 3.5, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &848615168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848615166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animals: []
+  Used: 0
 --- !u!1 &877901143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1382,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 924862917}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1427,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
+  animals: []
   Used: 0
 --- !u!1 &949586679
 GameObject:
@@ -1514,7 +1529,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 949586684}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1574,7 +1589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
+  animals: []
   Used: 0
 --- !u!1 &1023282572
 GameObject:
@@ -1590,7 +1605,7 @@ GameObject:
   - component: {fileID: 1023282574}
   - component: {fileID: 1023282577}
   m_Layer: 5
-  m_Name: Terreno4
+  m_Name: Terreno5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1608,7 +1623,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848615167}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1661,7 +1676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1023282577}
         m_TargetAssemblyTypeName: Terreno, Assembly-CSharp
-        m_MethodName: TerrenoNotUsed
+        m_MethodName: ClickearTerreno
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1721,7 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: []
+  animals: []
   Used: 0
 --- !u!1 &1023740631
 GameObject:
@@ -2682,16 +2697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83359b847f646474796699a0067d7a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos:
-  - {fileID: 158702903}
-  - {fileID: 924862912}
-  - {fileID: 949586679}
-  - {fileID: 1023282572}
-  - {fileID: 36491878}
-  - {fileID: 343420620}
+  terrenos: {fileID: 0}
   animales:
   - {fileID: 4480586320215098832, guid: a4bcbdeccd65a4643b66ffd138888b70, type: 3}
-  tiendaEmptySlot: {fileID: 0}
 --- !u!114 &1741745619
 MonoBehaviour:
   m_ObjectHideFlags: 0

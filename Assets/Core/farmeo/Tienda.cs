@@ -7,16 +7,17 @@ using DG.Tweening;
 public class Tienda : MonoBehaviour
 {
     bool IsOpen;
+    public Terreno terrain;
+    public List<GameObject> Terrenos;
     public static Tienda instance;
-    public List<GameObject> terrenos;
     public List<GameObject> animales;
-    public Sprite tiendaEmptySlot;
     public void Awake()
     {
         if  (instance == null)
         {
             instance = this;
             GetComponent<RectTransform>().DOScale(0, 0);
+            terrain = GetComponent<Terreno>();
         }
     }
     public void AbrirTienda()
@@ -37,31 +38,18 @@ public class Tienda : MonoBehaviour
     }
 
 
-    public void Comprar(float precio,IComprable comprable)
+    public void Comprar(float precio)
     {
-        // 6 espacios posibles
-        // el primero siempre esta usado
-        //como saber si estan en uso
-        if (GameManager.instance.partidaGuardada.dinero>=precio)
+        if (GameManager.instance.partidaGuardada.dinero >= precio)
         {
-            //asignar sprite
-         
-            
-            // descontar dinero
-            GameManager.instance.partidaGuardada.dinero -=
-                comprable.GetPrecio();
-            for (int i = 0; i < terrenos.Count; i++)
+            if (Terrenos[0] = terrain.Used)
             {
-                if (terrenos[i].GetComponent<Image>().sprite.name == "UISprite")
-                {
-                    //entonces puede crear en el terreno
-                    terrenos[i].GetComponent<Image>().sprite = comprable.GetSprite(); break;
-                }
+
             }
         }
         else
         {
-            //no se puede copmprar
+            //no se puede comprar
         }
     }
 
