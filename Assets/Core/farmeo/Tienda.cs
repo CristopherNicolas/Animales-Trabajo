@@ -42,7 +42,7 @@ public class Tienda : MonoBehaviour
     {
         if (GameManager.instance.partidaGuardada.dinero >= precio)
         {
-            if (Terrenos[0] = terrain.Used)
+            //if (Terrenos[0] = terrain.Used)
             {
 
             }

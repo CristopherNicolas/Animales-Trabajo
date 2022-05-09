@@ -95,8 +95,6 @@ public class HerramientasTamagochi : MonoBehaviour
     public void AguaEfect()
     {
         UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
-        
-        
     }
     public void alimentoEfect()
     {
@@ -107,9 +105,9 @@ public class HerramientasTamagochi : MonoBehaviour
     public void PeinetaEfect()
     {
         //hacer que salten pulgas para que puedan serclickeadas 
-        int random = Random.Range(0, 2);
+        int random = Random.Range(0, 5);
         Vector2 randomPos= new Vector2(Random.Range(231,1346),Random.Range(-370,430));
-        if (random==0)
+        if (random>0)
         {
            var obj= Instantiate(pulgaPrefab,randomPos,Quaternion.identity);
             obj.transform.parent = GameObject.Find("Canvas").transform;

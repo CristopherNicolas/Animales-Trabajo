@@ -493,7 +493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 412}
+  m_AnchoredPosition: {x: 0, y: 452}
   m_SizeDelta: {x: 844.6899, y: 129.46121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &267477354
@@ -873,16 +873,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 743679397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b932972d0339faa4dad3a37f5fa32681, type: 3}
+  m_Script: {fileID: 11500000, guid: 1da8d938458bad641bdaa3c4b7d76ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorAgua: {fileID: 2800000, guid: 86896dce8ee5a2942915495c15a7501c, type: 3}
-  cursorAlimento: {fileID: 2800000, guid: 565e7f535fd4d3d4382206504923fff4, type: 3}
-  cursorPeineta: {fileID: 2800000, guid: 1231ad893f651474c8ee60050f128e5c, type: 3}
-  cursorDefault: {fileID: 2800000, guid: 86896dce8ee5a2942915495c15a7501c, type: 3}
-  eSTADOCURSOR: 0
-  slider: {fileID: 284485661}
-  pulgaPrefab: {fileID: 6352136956587767290, guid: 87631f28b86f30641abeefcb62e74c6b, type: 3}
+  terrenoActual: 0
+  tamagochiSystem: {fileID: 743679398}
 --- !u!114 &743679401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,11 +887,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 743679397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0b7f09ba5909fe42ba64fe813e1ac79, type: 3}
+  m_Script: {fileID: 11500000, guid: 919a713ce8fb8c94286b771cdc52a67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenoActual: 0
-  tamagochiSystem: {fileID: 743679398}
+  cursorAgua: {fileID: 2800000, guid: 1d2a88e62018f4b4c8c857df4ac4ad7b, type: 3}
+  cursorAlimento: {fileID: 2800000, guid: 9c7c08bd1695bfc4aa50fc0917516e15, type: 3}
+  cursorPeineta: {fileID: 2800000, guid: daa66cd1467e31141a4be98d7f8361b8, type: 3}
+  cursorDefault: {fileID: 2800000, guid: 1d2a88e62018f4b4c8c857df4ac4ad7b, type: 3}
+  eSTADOCURSOR: 0
+  slider: {fileID: 284485661}
+  pulgaPrefab: {fileID: 6352136956587767290, guid: 6387e6d2ec5cd8743a59b9ade60975a9, type: 3}
 --- !u!1 &860246523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1392.3589, y: 32.8004}
+  m_AnchoredPosition: {x: 1613, y: -425}
   m_SizeDelta: {x: 200.7178, y: 95.6009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124120513
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743679401}
+      - m_Target: {fileID: 743679400}
         m_TargetAssemblyTypeName: CambiarTamagochi, Assembly-CSharp
         m_MethodName: CambiarAnimal
         m_Mode: 1
@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743679400}
+      - m_Target: {fileID: 743679401}
         m_TargetAssemblyTypeName: HerramientasTamagochi, Assembly-CSharp
         m_MethodName: Peineta
         m_Mode: 1
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743679400}
+      - m_Target: {fileID: 743679401}
         m_TargetAssemblyTypeName: HerramientasTamagochi, Assembly-CSharp
         m_MethodName: Interactuar
         m_Mode: 1
@@ -2312,7 +2312,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743679400}
+      - m_Target: {fileID: 743679401}
         m_TargetAssemblyTypeName: HerramientasTamagochi, Assembly-CSharp
         m_MethodName: Agua
         m_Mode: 1
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743679400}
+      - m_Target: {fileID: 743679401}
         m_TargetAssemblyTypeName: HerramientasTamagochi, Assembly-CSharp
         m_MethodName: Alimento
         m_Mode: 1

@@ -11,11 +11,12 @@ public class Pulga : MonoBehaviour
     bool haSidoClickeada = false;
     private void Start()
     {
-        DeadTime();
+        StartCoroutine(DeadTime());
     }
-    public async void DeadTime()
+    public IEnumerator DeadTime()
     {
-        await Task.Delay(System.TimeSpan.FromSeconds(3));
+        yield return new WaitForSecondsRealtime(3);
+        if (gameObject != null)
         Destroy(gameObject);
     }
     public async void Clickear()
