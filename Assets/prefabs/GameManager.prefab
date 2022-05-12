@@ -44,10 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b772e412f2a00c4b8a5c95dc1134cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dinero: 0
   partidaGuardada:
-    dinero: 0
-    animalParaTamagochi: {fileID: 1213966168113348689, guid: 7173188e8ab009e46b8ac793c53a5968, type: 3}
+    dinero: 1000
+    perros: 0
+    gatos: 1
+    patos: 0
+    animalesEnTerrenos:
+    - {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
+  cat: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
 --- !u!114 &60125170627424875
 MonoBehaviour:
   m_ObjectHideFlags: 0

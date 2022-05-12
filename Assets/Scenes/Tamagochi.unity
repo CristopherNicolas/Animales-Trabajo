@@ -291,14 +291,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 60125170627424877, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
-      propertyPath: cat
-      value: 
-      objectReference: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
-    - target: {fileID: 60125170627424877, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
-      propertyPath: defaulAnimal
-      value: 
-      objectReference: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
     - target: {fileID: 60125170627424878, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -877,7 +869,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 743679397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da8d938458bad641bdaa3c4b7d76ac4, type: 3}
+  m_Script: {fileID: 11500000, guid: b70bc5a8793000948a308224b32c4d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   terrenoActual: 0
@@ -891,18 +883,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 743679397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919a713ce8fb8c94286b771cdc52a67a, type: 3}
+  m_Script: {fileID: 11500000, guid: f03e61ebd6e5f934d8596656630ca4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorAgua: {fileID: 2800000, guid: 4d247f9f0b173424784e492cc3a4f41c, type: 3}
-  cursorAlimento: {fileID: 2800000, guid: 9c7c08bd1695bfc4aa50fc0917516e15, type: 3}
-  cursorPeineta: {fileID: 2800000, guid: daa66cd1467e31141a4be98d7f8361b8, type: 3}
-  cursorDefault: {fileID: 2800000, guid: 1d2a88e62018f4b4c8c857df4ac4ad7b, type: 3}
+  cursorAgua: {fileID: 2800000, guid: c83c893d02e88bf408bd18d47d1d574b, type: 3}
+  cursorAlimento: {fileID: 2800000, guid: 99b660974e5724a43ad789dc810820f8, type: 3}
+  cursorPeineta: {fileID: 2800000, guid: 9b8fb92783a82f74abbbb61c2211799f, type: 3}
+  cursorDefault: {fileID: 2800000, guid: 69d8eb3884ed98c4398bb9e9110afdeb, type: 3}
   eSTADOCURSOR: 0
-  galletaPrefab: {fileID: 1888919241467633153, guid: 6816af089a5e0ac4cb9d969ac87e1d82, type: 3}
+  gotaAguaPrefab: {fileID: 1327147753384236045, guid: d6f65fa00df113f43a181e4e92c791d3, type: 3}
+  galletaPrefab: {fileID: 1888919241467633153, guid: 9fa6a5ffff05ba64e93ab0c891a5238d, type: 3}
   spawnerOBJ: {fileID: 1745458637}
   slider: {fileID: 284485661}
-  pulgaPrefab: {fileID: 6352136956587767290, guid: 6387e6d2ec5cd8743a59b9ade60975a9, type: 3}
+  pulgaPrefab: {fileID: 6352136956587767290, guid: d121562f24a81924da0cca2f9da908c1, type: 3}
 --- !u!1 &860246523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1124120512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2235,6 +2228,7 @@ MonoBehaviour:
   stats: {fileID: 267477354}
   diversion: 0
   hambre: 0
+  sed: 0
 --- !u!1 &1745458637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,7 +2263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 457.7517, y: 283}
+  m_AnchoredPosition: {x: 1439, y: 283}
   m_SizeDelta: {x: 722.9085, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745458639

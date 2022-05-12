@@ -1328,6 +1328,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424877, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
+      propertyPath: cat
+      value: 
+      objectReference: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
+    - target: {fileID: 60125170627424877, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: partidaGuardada.animalesEnTerrenos.Array.size
       value: 1
       objectReference: {fileID: 0}
