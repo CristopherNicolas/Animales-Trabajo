@@ -268,7 +268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &158702903
 GameObject:
@@ -415,8 +417,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animals: []
+  maxAnimals: 10
+  animals:
+  - {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
+  Sprites: []
   Used: 1
+--- !u!1 &160852573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160852574}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &160852574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160852573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1299.4465, y: 476.64987, z: -378.32327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1950441085}
+  - {fileID: 1665268257}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216685930
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,13 +536,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1741745618}
-        m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 5
+      - m_Target: {fileID: 1665268256}
+        m_TargetAssemblyTypeName: TerrenoManager, Assembly-CSharp
+        m_MethodName: CompraAnimal
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Animal, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -815,7 +852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &367644773
 GameObject:
@@ -913,7 +952,7 @@ RectTransform:
   - {fileID: 1741745617}
   - {fileID: 239785749}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1002,13 +1041,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1741745618}
-        m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 5
+      - m_Target: {fileID: 1665268256}
+        m_TargetAssemblyTypeName: TerrenoManager, Assembly-CSharp
+        m_MethodName: CompraAnimal
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1213966168113348689, guid: 7173188e8ab009e46b8ac793c53a5968, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Animal, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1106,7 +1145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &877901143
 GameObject:
@@ -1193,7 +1234,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1245,23 +1286,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 160852574}
     m_Modifications:
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 914.28125
+      value: -385.16528
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 440.9353
+      value: -35.71457
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -603.90704
+      value: -225.58377
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1269,15 +1310,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1442,7 +1483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &949586679
 GameObject:
@@ -1589,7 +1632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &1023282572
 GameObject:
@@ -1736,7 +1781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8530c1e4641a97d419bd7de1db5322cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAnimals: 10
   animals: []
+  Sprites: []
   Used: 0
 --- !u!1 &1023740631
 GameObject:
@@ -1823,7 +1870,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1955,7 +2002,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2087,7 +2134,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2219,7 +2266,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2504,7 +2551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1640721095
 GameObject:
@@ -2639,6 +2686,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640721095}
   m_CullTransparentMesh: 1
+--- !u!1 &1665268255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665268257}
+  - component: {fileID: 1665268256}
+  m_Layer: 0
+  m_Name: TerrenoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1665268256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665268255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3e2b0a516f43b4880437300efac964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrenos:
+  - {fileID: 158702908}
+  - {fileID: 924862917}
+  - {fileID: 949586684}
+  - {fileID: 36491883}
+  - {fileID: 1023282577}
+  - {fileID: 343420625}
+  animales: []
+--- !u!4 &1665268257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665268255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 160852574}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741745616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,7 +2795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83359b847f646474796699a0067d7a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos: {fileID: 0}
+  terrain: {fileID: 0}
+  Terrenos: []
   animales:
   - {fileID: 4480586320215098832, guid: a4bcbdeccd65a4643b66ffd138888b70, type: 3}
 --- !u!114 &1741745619
@@ -2738,6 +2837,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741745616}
   m_CullTransparentMesh: 1
+--- !u!4 &1950441085 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 60125170627424876, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
+  m_PrefabInstance: {fileID: 882026827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2112350435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2819,7 +2923,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118525825
 GameObject:
@@ -2906,7 +3010,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
         m_MethodName: Comprar
-        m_Mode: 5
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
