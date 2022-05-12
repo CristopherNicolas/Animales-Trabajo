@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.Threading.Tasks;
 public delegate void Inter();
 
 public class HerramientasTamagochi : MonoBehaviour
@@ -10,10 +11,34 @@ public class HerramientasTamagochi : MonoBehaviour
     public Inter inter;
    public Texture2D cursorAgua, cursorAlimento, cursorPeineta,cursorDefault;
     public ESTADOCURSOR eSTADOCURSOR = ESTADOCURSOR.DEFAUL;
+    private void Awake()
+    {
+        inter = new Inter(DefaultEfect);
+        AsignarCursor(eSTADOCURSOR);
+        slider.transform.DOScale(0, 0);
+    }
     public void Interactuar()
     {
         inter();
     }
+    public void AsignarCursor(ESTADOCURSOR eSTADOCURSOR)
+    {
+        switch (eSTADOCURSOR)
+        {
+            case ESTADOCURSOR.DEFAUL: Cursor.SetCursor(cursorDefault, Vector2.zero,CursorMode.Auto);
+                break;
+            case ESTADOCURSOR.PEINETA:Cursor.SetCursor(cursorPeineta, Vector2.zero, CursorMode.Auto);
+                break;
+            case ESTADOCURSOR.AGUA:Cursor.SetCursor(cursorAgua, Vector2.zero, CursorMode.Auto);
+                break;
+            case ESTADOCURSOR.ALIMENTO:Cursor.SetCursor(cursorAlimento, Vector2.zero, CursorMode.Auto);
+                break;
+            default:
+                Cursor.SetCursor(cursorDefault, Vector2.zero, CursorMode.Auto);
+                break;
+        }
+    }
+    //estos metodos se llaman con los botones del panel del ui
     public void Alimento()
     {
         if (eSTADOCURSOR == ESTADOCURSOR.ALIMENTO)
@@ -44,7 +69,7 @@ public class HerramientasTamagochi : MonoBehaviour
         AsignarCursor(eSTADOCURSOR);
 
     }
-    public void Peineta()
+    public void Peineta()   
     {
         // al hacer click activa el modo peineta para peinar al animal.
         if (eSTADOCURSOR == ESTADOCURSOR.PEINETA)
@@ -60,45 +85,33 @@ public class HerramientasTamagochi : MonoBehaviour
         }
         AsignarCursor(eSTADOCURSOR);
     }
-    public void AsignarCursor(ESTADOCURSOR eSTADOCURSOR)
-    {
-        switch (eSTADOCURSOR)
-        {
-            case ESTADOCURSOR.DEFAUL: Cursor.SetCursor(cursorDefault, Vector2.zero,CursorMode.Auto);
-                break;
-            case ESTADOCURSOR.PEINETA:Cursor.SetCursor(cursorPeineta, Vector2.zero, CursorMode.Auto);
-                break;
-            case ESTADOCURSOR.AGUA:Cursor.SetCursor(cursorAgua, Vector2.zero, CursorMode.Auto);
-                break;
-            case ESTADOCURSOR.ALIMENTO:Cursor.SetCursor(cursorAlimento, Vector2.zero, CursorMode.Auto);
-                break;
-            default:
-                Cursor.SetCursor(cursorDefault, Vector2.zero, CursorMode.Auto);
-                break;
-        }
-    }
-    private void Awake()
-    {
-        inter = new Inter(DefaultEfect);
-        cursorPeineta.Resize(800, 800);
-        cursorAgua.Resize(400, 400);
-        cursorAlimento.Resize(400, 400);
-        cursorDefault.Resize(400, 400);
-        AsignarCursor(eSTADOCURSOR);
-        slider.transform.DOScale(0, 0);
-        
-    }
     public void DefaultEfect()
     {
-        UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
+        UiSystem.instance.EnviarMensaje("sonidos animal ", 0.4f,1,2);
+            
     }
     public void AguaEfect()
     {
         UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
     }
-    public void alimentoEfect()
+    public GameObject galletaPrefab,spawnerOBJ; 
+    public async void alimentoEfect()
     {
-        UiSystem.instance.EnviarMensaje("alimento  efect", 0.4f,1,2);
+        int range= Random.Range(0,5);
+        float multiplicador,escala;
+        UiSystem.instance.EnviarMensaje("clickea el alimento", 0.4f,1,2);
+            await Task.Delay(System.TimeSpan.FromSeconds(1));
+        for (int i = 0; i < range; i++)
+        {
+            multiplicador = Random.Range(0.1f, 0.5f);
+            await Task.Delay(System.TimeSpan.FromSeconds(1));
+             var obj = Instantiate(galletaPrefab, spawnerOBJ.GetComponent<RectTransform>());
+               RectTransform objRectT = obj.GetComponent<RectTransform>();
+                objRectT.DOScale(Random.Range(0.2f, 1f),0);
+                 escala = objRectT.localScale.x;
+                  objRectT.DOMoveX(Random.Range(-750, 1290), 0);
+            objRectT.DOMoveY(-500,10*objRectT.localScale.x);
+        }
     }
     public Slider slider;
     public GameObject pulgaPrefab;
@@ -123,6 +136,7 @@ public class HerramientasTamagochi : MonoBehaviour
         }
     }
 }
+
 
 public enum ESTADOCURSOR
 {

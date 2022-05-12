@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public Save partidaGuardada;
-    public Animal defaulAnimal;
+    public Animal cat;
     private void Awake()
     {
         if (instance == null)
@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
             //comprueba si es la primera vez jugando:
              if(SaveSystem.ifIsFirstPlay())
             {
+                NewGame();
 
             }
-
           //   SaveGame();
            LoadGame();
         }
@@ -30,24 +30,18 @@ public class GameManager : MonoBehaviour
        partidaGuardada = SaveSystem.Load();
         if (partidaGuardada.animalesEnTerrenos.Count == 0)
         {
-            partidaGuardada.animalesEnTerrenos.Add(defaulAnimal);
+            partidaGuardada.animalesEnTerrenos.Add(cat);
         }
     }
     public void SaveGame()
     {
         SaveSystem.SaveData(partidaGuardada);
-        
     }
     public void NewGame()
     {
-        LoadGame();
-
+        SaveGame();
     }
 }
-
-
-
-
 public enum GRUPOANIMAL
 {
    Canino, Felino,Ave

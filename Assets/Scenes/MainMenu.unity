@@ -1327,6 +1327,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 60125170627424877, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
+      propertyPath: partidaGuardada.animalesEnTerrenos.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 60125170627424878, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
       propertyPath: m_Name
       value: GameManager
