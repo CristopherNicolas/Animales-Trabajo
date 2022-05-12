@@ -19,6 +19,7 @@ public class HerramientasTamagochi : MonoBehaviour
     }
     public void Interactuar()
     {
+        UiSystem.instance.CerrarPanel(5);
         inter();
     }
     public void AsignarCursor(ESTADOCURSOR eSTADOCURSOR)
@@ -90,9 +91,28 @@ public class HerramientasTamagochi : MonoBehaviour
         UiSystem.instance.EnviarMensaje("sonidos animal ", 0.4f,1,2);
             
     }
+    public GameObject gotaAguaPrefab;
     public void AguaEfect()
     {
-        UiSystem.instance.EnviarMensaje("Has dado agua", 0.4f,1,2);
+        UiSystem.instance.EnviarMensaje("clickea las gotas", 0.4f,1,2);
+        //caundo el jugador haga click en el animal apareceran 3 gotas
+        int range = Random.Range(2, 5),t=4;
+        Vector2 posicionParaSpawn(Vector2 ant)
+        {
+            int r = Random.Range(-1, 1);
+            if (r < 0)
+                return new Vector2(ant.x - 200, ant.y + 50);
+            else return new Vector2(ant.x + 200, ant.y);
+        }
+        for (int i = 0; i < range; i++)
+        {
+            GameObject obj = Instantiate(gotaAguaPrefab,posicionParaSpawn(Vector2.zero),Quaternion.identity);
+            obj.transform.SetParent(GameObject.Find("Canvas").transform);
+                    RectTransform rt = obj.GetComponent<RectTransform>();
+            rt.DOScale(0, t);
+            obj.GetComponent<Image>().DOColor(new Color(0, 0, 0, 0),t);
+        }
+          //cada gota tiene un numero, mientras mas alto el numero mas rapido desaparece
     }
     public GameObject galletaPrefab,spawnerOBJ; 
     public async void alimentoEfect()
@@ -109,7 +129,7 @@ public class HerramientasTamagochi : MonoBehaviour
                RectTransform objRectT = obj.GetComponent<RectTransform>();
                 objRectT.DOScale(Random.Range(0.2f, 1f),0);
                  escala = objRectT.localScale.x;
-                  objRectT.DOMoveX(Random.Range(-750, 1290), 0);
+                  objRectT.DOMoveX(Random.Range(0, 1000), 0);
             objRectT.DOMoveY(-500,10*objRectT.localScale.x);
         }
     }

@@ -19,19 +19,15 @@ public class GameManager : MonoBehaviour
              if(SaveSystem.ifIsFirstPlay())
             {
                 NewGame();
-
             }
-          //   SaveGame();
+          else
            LoadGame();
         }
+        Debug.Log(GameManager.instance.partidaGuardada);
     }
     public void LoadGame()
     {
        partidaGuardada = SaveSystem.Load();
-        if (partidaGuardada.animalesEnTerrenos.Count == 0)
-        {
-            partidaGuardada.animalesEnTerrenos.Add(cat);
-        }
     }
     public void SaveGame()
     {
@@ -39,7 +35,7 @@ public class GameManager : MonoBehaviour
     }
     public void NewGame()
     {
-        SaveGame();
+          SaveSystem.SaveData(partidaGuardada);
     }
 }
 public enum GRUPOANIMAL

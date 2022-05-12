@@ -9,13 +9,15 @@ public class UiSystem : MonoBehaviour
 {
     public TMP_Text feed,stats;
     bool puedeEnviarAlFeed=true;
-    public float diversion, hambre;
+    public float diversion, hambre,sed;
     public static UiSystem instance;
+    RectTransform panelHerramientas;
     private void Awake()
     {
         if (instance==null)
         {
             instance = this;
+            panelHerramientas = GameObject.Find("panel interaccion").GetComponent<RectTransform>();
         }
     }
     public async void EnviarMensaje(string msj, float delay = 1, float animationTime = 1,float stayTime=3)
@@ -42,5 +44,17 @@ public class UiSystem : MonoBehaviour
          float alimentoADescontar=
             GameObject.Find("Tamagochi System").GetComponent<TamagochiSystem>().personaje.tipoDeAnimal.ObtenerAlimento();
     }
+    public void DarAgua(float toAdd)
+    {
+        sed += toAdd;
+    }
+    public async void CerrarPanel(float tiempoFuera)
+    {
+        panelHerramientas.DOMoveX(-500, 1);
+        await Task.Delay(System.TimeSpan.FromSeconds(tiempoFuera));
+        panelHerramientas.DOMoveX(300, 1);
+    }
+    public void CerrarPanel() => panelHerramientas.DOMoveX(-500, 1);
+    public void AbrirPanel() => panelHerramientas.DOMoveX(300, 1);
          
 }
