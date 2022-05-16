@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Galleta
+  - ContadorGatos
   layers:
   - Default
   - TransparentFX

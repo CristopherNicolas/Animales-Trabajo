@@ -483,7 +483,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 678882812}
   m_Father: {fileID: 1741745617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -536,13 +537,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1665268256}
-        m_TargetAssemblyTypeName: TerrenoManager, Assembly-CSharp
-        m_MethodName: CompraAnimal
-        m_Mode: 2
+      - m_Target: {fileID: 1741745618}
+        m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
+        m_MethodName: ComprarGato
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 6337595401585237558, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
-          m_ObjectArgumentAssemblyTypeName: Animal, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -959,6 +960,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &678882811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678882812}
+  - component: {fileID: 678882814}
+  - component: {fileID: 678882813}
+  m_Layer: 0
+  m_Name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &678882812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678882811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 216685931}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 124.8, y: 155.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &678882813
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678882811}
+  m_CullTransparentMesh: 1
+--- !u!114 &678882814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678882811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5905100962758394600, guid: e4d75208c9c78d34488f322b67e442e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &775970011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1117,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1665268256}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TerrenoManager, Assembly-CSharp
         m_MethodName: CompraAnimal
         m_Mode: 2
@@ -2049,6 +2125,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155665036}
   m_CullTransparentMesh: 1
+--- !u!1 &1277783482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277783484}
+  - component: {fileID: 1277783483}
+  m_Layer: 0
+  m_Name: Prueba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1277783483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277783482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc37ccae17caa45428d953e74e35ac15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj1: {fileID: 158702903}
+  obj2: {fileID: 6700349987282631472, guid: 925240f1382e066478644bf234f6af2e, type: 3}
+--- !u!4 &1277783484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277783482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 884.3647, y: 419.4167, z: -237.12866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343104214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,17 +2833,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665268255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3e2b0a516f43b4880437300efac964, type: 3}
+  m_Script: {fileID: 11500000, guid: d95472da81959c84baaee1996ad58d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrenos:
-  - {fileID: 158702908}
-  - {fileID: 924862917}
-  - {fileID: 949586684}
-  - {fileID: 36491883}
-  - {fileID: 1023282577}
-  - {fileID: 343420625}
-  animales: []
+  Terrenos:
+  - {fileID: 158702903}
+  - {fileID: 924862912}
+  - {fileID: 949586679}
+  - {fileID: 36491878}
+  - {fileID: 1023282572}
+  - {fileID: 343420620}
+  used1: 0
+  used2: 0
+  used3: 0
+  used4: 0
+  used5: 0
+  used6: 0
 --- !u!4 &1665268257
 Transform:
   m_ObjectHideFlags: 0
@@ -2795,10 +2921,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83359b847f646474796699a0067d7a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 0}
-  Terrenos: []
-  animales:
-  - {fileID: 4480586320215098832, guid: a4bcbdeccd65a4643b66ffd138888b70, type: 3}
+  ter: {fileID: 1665268256}
+  Comprables:
+  - {fileID: 6700349987282631472, guid: 925240f1382e066478644bf234f6af2e, type: 3}
+  - {fileID: 6700349987282631472, guid: 925240f1382e066478644bf234f6af2e, type: 3}
+  Terrenos:
+  - {fileID: 158702903}
+  - {fileID: 924862912}
+  - {fileID: 949586679}
+  - {fileID: 36491878}
+  - {fileID: 1023282572}
+  - {fileID: 343420620}
+  asignarTerreno: 0
+  Gatos: 0
+  Gato: {fileID: 2497198689128673046, guid: 6d07e1bfd9252dd458c80d0f84e77a8f, type: 3}
 --- !u!114 &1741745619
 MonoBehaviour:
   m_ObjectHideFlags: 0
