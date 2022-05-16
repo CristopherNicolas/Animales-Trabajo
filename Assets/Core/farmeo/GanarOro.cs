@@ -10,10 +10,7 @@ public class GanarOro : MonoBehaviour
     {
         Oro = GetComponent<Text>();
     }
-    private void Update()
-    {
-        
-    }
+
     public void FixedUpdate()
     {
         Oro.text = " $ " + GameManager.instance.partidaGuardada.dinero;
