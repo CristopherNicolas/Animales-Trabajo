@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 216685933}
   - component: {fileID: 216685932}
   m_Layer: 5
-  m_Name: Gato
+  m_Name: otro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,10 +483,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 678882812}
+  m_Children: []
   m_Father: {fileID: 1741745617}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -539,7 +538,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: ComprarGato
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -960,6 +959,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &443488400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443488401}
+  - component: {fileID: 443488403}
+  - component: {fileID: 443488402}
+  m_Layer: 0
+  m_Name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &443488401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443488400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75757, y: 0.75757, z: 0.75757}
+  m_Children: []
+  m_Father: {fileID: 2118525826}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 19}
+  m_SizeDelta: {x: 124.8, y: 155.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &443488402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443488400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5945910360152097836, guid: e4d75208c9c78d34488f322b67e442e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &443488403
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443488400}
+  m_CullTransparentMesh: 1
 --- !u!1 &678882811
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,14 +1061,14 @@ RectTransform:
   m_GameObject: {fileID: 678882811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75757, y: 0.75757, z: 0.75757}
   m_Children: []
-  m_Father: {fileID: 216685931}
+  m_Father: {fileID: 775970012}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 19}
   m_SizeDelta: {x: 124.8, y: 155.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &678882813
@@ -1048,7 +1122,7 @@ GameObject:
   - component: {fileID: 775970014}
   - component: {fileID: 775970013}
   m_Layer: 5
-  m_Name: Perro
+  m_Name: Gato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1064,7 +1138,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 678882812}
   m_Father: {fileID: 1741745617}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1117,13 +1192,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TerrenoManager, Assembly-CSharp
-        m_MethodName: CompraAnimal
-        m_Mode: 2
+      - m_Target: {fileID: 1741745618}
+        m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
+        m_MethodName: ComprarGato
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1213966168113348689, guid: 7173188e8ab009e46b8ac793c53a5968, type: 3}
-          m_ObjectArgumentAssemblyTypeName: Animal, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1309,8 +1384,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1874,7 +1949,7 @@ GameObject:
   - component: {fileID: 1023740634}
   - component: {fileID: 1023740633}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Pato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1890,9 +1965,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1476818454}
   m_Father: {fileID: 1741745617}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1945,8 +2021,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: ComprarPato
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2077,8 +2153,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2183,7 +2259,7 @@ GameObject:
   - component: {fileID: 1343104217}
   - component: {fileID: 1343104216}
   m_Layer: 5
-  m_Name: Pato
+  m_Name: otro2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2201,7 +2277,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1741745617}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2254,8 +2330,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2386,8 +2462,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2514,6 +2590,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470117220}
+  m_CullTransparentMesh: 1
+--- !u!1 &1476818453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476818454}
+  - component: {fileID: 1476818456}
+  - component: {fileID: 1476818455}
+  m_Layer: 0
+  m_Name: png-transparent-chibi-drawing-cuteness-pixel-art-drawing-animals-mammal-text-carnivoran_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1476818454
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476818453}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 65, y: 65, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1023740632}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 19}
+  m_SizeDelta: {x: 1.19, y: 1.88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1476818455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476818453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5458731711889227409, guid: e4d75208c9c78d34488f322b67e442e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1476818456
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476818453}
   m_CullTransparentMesh: 1
 --- !u!1 &1567534007
 GameObject:
@@ -2849,6 +3000,7 @@ MonoBehaviour:
   used4: 0
   used5: 0
   used6: 0
+  TerrenoDisponible: 0
 --- !u!4 &1665268257
 Transform:
   m_ObjectHideFlags: 0
@@ -2894,10 +3046,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 775970012}
-  - {fileID: 216685931}
-  - {fileID: 1343104215}
   - {fileID: 2118525826}
   - {fileID: 1023740632}
+  - {fileID: 216685931}
+  - {fileID: 1343104215}
   - {fileID: 1368487281}
   - {fileID: 877901144}
   - {fileID: 1155665037}
@@ -2921,10 +3073,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83359b847f646474796699a0067d7a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ter: {fileID: 1665268256}
   Comprables:
   - {fileID: 6700349987282631472, guid: 925240f1382e066478644bf234f6af2e, type: 3}
-  - {fileID: 6700349987282631472, guid: 925240f1382e066478644bf234f6af2e, type: 3}
+  - {fileID: 1470488001119298886, guid: d1ef8b9d856298e4bb24ef99dbd8d6b3, type: 3}
+  - {fileID: 2968768400779369865, guid: e9c5a415b3f3a634c8ddd4aef8fd4bf4, type: 3}
   Terrenos:
   - {fileID: 158702903}
   - {fileID: 924862912}
@@ -2934,7 +3086,12 @@ MonoBehaviour:
   - {fileID: 343420620}
   asignarTerreno: 0
   Gatos: 0
-  Gato: {fileID: 2497198689128673046, guid: 6d07e1bfd9252dd458c80d0f84e77a8f, type: 3}
+  Perros: 0
+  Patos: 0
+  Display: {fileID: 2497198689128673046, guid: 6d07e1bfd9252dd458c80d0f84e77a8f, type: 3}
+  GatoDisplay: {fileID: 0}
+  PerroDisplay: {fileID: 0}
+  PatoDisplay: {fileID: 0}
 --- !u!114 &1741745619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3074,7 +3231,7 @@ GameObject:
   - component: {fileID: 2118525828}
   - component: {fileID: 2118525827}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Perro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3087,12 +3244,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118525825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 443488401}
   m_Father: {fileID: 1741745617}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3145,8 +3303,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741745618}
         m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: Comprar
-        m_Mode: 4
+        m_MethodName: ComprarPerro
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
