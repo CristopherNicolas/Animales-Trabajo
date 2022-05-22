@@ -20,12 +20,12 @@ public class TamagochiSystem : MonoBehaviour
     public void AsignarAnimal()
     {
         GameManager.instance.partidaGuardada.animalesEnTerrenos = new List<Animal>();
-        GameManager.instance.partidaGuardada.animalesEnTerrenos.Add(GameManager.instance.cat);
-        bgController.CambiarBG(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());
+         GameManager.instance.partidaGuardada.animalesEnTerrenos.Add(GameManager.instance.cat);
+           bgController.CambiarBG(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());
         personaje.image.sprite = GameManager.instance.partidaGuardada.animalesEnTerrenos.First().imagenAnimal;
         //cambiar stats
         UiSystem.instance.UpdateUI();
     }
     
-    //interaccion con el jugador
+    
 }

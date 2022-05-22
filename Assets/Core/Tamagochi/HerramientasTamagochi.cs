@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 using DG.Tweening;
 using System.Threading.Tasks;
 public delegate void Inter();
@@ -16,10 +17,11 @@ public class HerramientasTamagochi : MonoBehaviour
         inter = new Inter(DefaultEfect);
         AsignarCursor(eSTADOCURSOR);
         slider.transform.DOScale(0, 0);
+        
     }
     public void Interactuar()
     {
-        UiSystem.instance.CerrarPanel(5);
+        UiSystem.instance.CerrarPanel(8);
         inter();
     }
     public void AsignarCursor(ESTADOCURSOR eSTADOCURSOR)
@@ -86,10 +88,18 @@ public class HerramientasTamagochi : MonoBehaviour
         }
         AsignarCursor(eSTADOCURSOR);
     }
+    int i = 0;
+    public AudioSource animal;
+    public List<AudioClip> clipsAnimal;
     public void DefaultEfect()
     {
-        UiSystem.instance.EnviarMensaje("sonidos animal ", 0.4f,1,2);
-            
+        do
+        {
+            i = Random.Range(0, clipsAnimal.Count);
+            animal.clip = clipsAnimal[i];
+        }
+        while (clipsAnimal[i]==animal.clip);
+        animal.Play();
     }
     public GameObject gotaAguaPrefab;
     public void AguaEfect()
@@ -106,7 +116,8 @@ public class HerramientasTamagochi : MonoBehaviour
         }
         for (int i = 0; i < range; i++)
         {
-            GameObject obj = Instantiate(gotaAguaPrefab,posicionParaSpawn(Vector2.zero),Quaternion.identity);
+            GameObject obj = Instantiate(gotaAguaPrefab,posicionParaSpawn
+                (new Vector2(Random.Range(0,1000),Random.Range(-500,500))),Quaternion.identity);
             obj.transform.SetParent(GameObject.Find("Canvas").transform);
                     RectTransform rt = obj.GetComponent<RectTransform>();
             rt.DOScale(0, t);
@@ -117,10 +128,10 @@ public class HerramientasTamagochi : MonoBehaviour
     public GameObject galletaPrefab,spawnerOBJ; 
     public async void alimentoEfect()
     {
-        int range= Random.Range(0,5);
+        int range= Random.Range(2,7);
         float multiplicador,escala;
-        UiSystem.instance.EnviarMensaje("clickea el alimento", 0.4f,1,2);
-            await Task.Delay(System.TimeSpan.FromSeconds(1));
+        UiSystem.instance.EnviarMensaje("clickea el alimento", 0f,0.5f,3);
+            await Task.Delay(System.TimeSpan.FromSeconds(0.5f));
         for (int i = 0; i < range; i++)
         {
             multiplicador = Random.Range(0.1f, 0.5f);
@@ -145,13 +156,15 @@ public class HerramientasTamagochi : MonoBehaviour
            var obj= Instantiate(pulgaPrefab,randomPos,Quaternion.identity);
             obj.transform.parent = GameObject.Find("Canvas").transform;
         }
-        UiSystem.instance.EnviarMensaje("Usaste la peineta",0.4f,1,2);
+        UiSystem.instance.EnviarMensaje("Usaste la peineta, elimina las pulgas",0.4f,1,2);
         slider.transform.GetComponent<RectTransform>().DOScale(5, 0.3f);
-        slider.value += 20;
+        slider.value += 10;
         if (slider.value >= 100)
         {
             UiSystem.instance.EnviarMensaje("animal peinado", 0.4f, 1, 2);
             slider.value = 0;
+            UiSystem.instance.diversion += 20;
+            UiSystem.instance.UpdateUI();
             slider.transform.DOScale(0, 0.5f);
         }
     }

@@ -20,6 +20,10 @@ public class UiSystem : MonoBehaviour
             panelHerramientas = GameObject.Find("panel interaccion").GetComponent<RectTransform>();
         }
     }
+    private void Start()
+    {
+        DescontarEstadisticas();
+    }
     public async void EnviarMensaje(string msj, float delay = 1, float animationTime = 1,float stayTime=3)
     {
         if (puedeEnviarAlFeed)
@@ -35,9 +39,9 @@ public class UiSystem : MonoBehaviour
     }
     public void UpdateUI()
     {
-        stats.text = $"diversion:{diversion} hambre: {hambre}";        
+        stats.text = @$"diversion:{diversion}    hambre: {hambre}      sed: {sed}";
+        stats.GetComponent<RectTransform>().DOPunchScale(new Vector3(0.25f, 0.25f, 0.25f),1);
     }
-    
     public void Alimentar()
     {
         //alimentar segun el animal en escena
@@ -56,5 +60,18 @@ public class UiSystem : MonoBehaviour
     }
     public void CerrarPanel() => panelHerramientas.DOMoveX(-500, 1);
     public void AbrirPanel() => panelHerramientas.DOMoveX(300, 1);
+
+      public  async void DescontarEstadisticas()
+    {
+        while (true)
+        {
+          await Task.Delay(System.TimeSpan.FromSeconds(12));
+            hambre -= 2;
+            sed -= 3;
+            diversion -= 1;
+            UpdateUI();
+        }
+          
+    }
          
 }

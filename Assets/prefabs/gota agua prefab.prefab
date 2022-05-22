@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1501322391311347859}
   - component: {fileID: 8544017977981050230}
   - component: {fileID: 1032939375422223058}
-  - component: {fileID: 5179692956936189418}
   - component: {fileID: 3771519865787817391}
+  - component: {fileID: 1299680273944357288}
   m_Layer: 5
   m_Name: gota agua prefab
   m_TagString: Untagged
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19403537, g: 0.18396229, b: 1, a: 1}
+  m_Color: {r: 0.2719384, g: 0.30410397, b: 0.9150943, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -77,18 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5179692956936189418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327147753384236045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce6a7bde72afae42922c9da8f50f049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3771519865787817391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5179692956936189418}
+      - m_Target: {fileID: 1299680273944357288}
         m_TargetAssemblyTypeName: GotaAgua, Assembly-CSharp
         m_MethodName: OnClicked
         m_Mode: 1
@@ -145,3 +133,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1299680273944357288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327147753384236045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d08f190ec6b8a84087275c50061085f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
