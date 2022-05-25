@@ -61,13 +61,16 @@ public class Tienda : MonoBehaviour
 
     public void ComprarGato()
     {
-        if (GameManager.instance.partidaGuardada.dinero >= precioGato)
+        if ((Gatos == 0 || Gatos == 10 || Gatos == 20 || Gatos == 30 || Gatos == 40 || Gatos == 50 || Gatos == 60) && TerrenoManager.instance.TerrenoDisponible == false)
         {
-            if (GatoDisplay.text != "10" || TerrenoManager.instance.TerrenoDisponible == true)
+            Debug.Log("No hay Terreno disponible");
+        }
+        else
+        {
+            if (GameManager.instance.partidaGuardada.dinero >= precioGato)
             {
                 Gatos += 1;
-                GameManager.instance.partidaGuardada.dinero -= precioGato;
-                if (!GatoDisplay || Gatos == 11 || Gatos == 21 || Gatos == 31 || Gatos == 41 || Gatos == 51)
+                if (Gatos == 1 || Gatos == 11 || Gatos == 21 || Gatos == 31 || Gatos == 41 || Gatos == 51)
                 {
                     if (TerrenoManager.instance.used1 == false)
                     {
@@ -121,27 +124,27 @@ public class Tienda : MonoBehaviour
                         }
                     }
                 }
+                GameManager.instance.partidaGuardada.dinero -= precioGato;
                 CerrarTienda();
             }
             else
             {
-                Debug.Log("No hay más espacio disponible");
+                Debug.Log("No te queda dinero");
             }
-        }
-        else if (GameManager.instance.partidaGuardada.dinero <= precioGato)
-        {
-            Debug.Log("No te queda dinero");
         }
     }
     public void ComprarPerro()
     {
-        if (GameManager.instance.partidaGuardada.dinero >= precioPerro)
+        if ((Perros == 0 || Perros == 10 || Perros == 20 || Perros == 30 || Perros == 40 || Perros == 50 || Perros == 60) && TerrenoManager.instance.TerrenoDisponible == false)
         {
-            if (PerroDisplay.text != "10" || TerrenoManager.instance.TerrenoDisponible == true)
+            Debug.Log("No hay Terreno disponible");
+        }
+        else
+        {
+            if (GameManager.instance.partidaGuardada.dinero >= precioPerro)
             {
                 Perros += 1;
-                GameManager.instance.partidaGuardada.dinero -= precioPerro;
-                if (!PerroDisplay || Perros == 11 || Perros == 21 || Perros == 31 || Perros == 41 || Perros == 51)
+                if (Perros == 1 || Perros == 11 || Perros == 21 || Perros == 31 || Perros == 41 || Perros == 51)
                 {
                     if (TerrenoManager.instance.used1 == false)
                     {
@@ -194,30 +197,29 @@ public class Tienda : MonoBehaviour
                             }
                         }
                     }
-                    return;
                 }
+                GameManager.instance.partidaGuardada.dinero -= precioPerro;
                 CerrarTienda();
             }
             else
             {
-                Debug.Log("No hay más espacio disponible");
+                Debug.Log("No te queda dinero");
             }
-        }
-        else if (GameManager.instance.partidaGuardada.dinero <= precioPerro)
-        {
-            Debug.Log("No te queda dinero");
         }
     }
 
     public void ComprarPato()
     {
-        if (GameManager.instance.partidaGuardada.dinero >= precioPato)
+        if ((Patos == 0 || Patos == 10 || Patos == 20 || Patos == 30 || Patos == 40 || Patos == 50 || Patos == 60) && TerrenoManager.instance.TerrenoDisponible == false)
         {
-            if (PatoDisplay.text != "10" || TerrenoManager.instance.TerrenoDisponible == true)
+            Debug.Log("No hay Terreno disponible");
+        }
+        else
+        {
+            if (GameManager.instance.partidaGuardada.dinero >= precioPato)
             {
                 Patos += 1;
-                GameManager.instance.partidaGuardada.dinero -= precioPato;
-                if (!PatoDisplay || Patos == 11 || Patos == 21 || Patos == 31 || Patos == 41 || Patos == 51)
+                if (Patos == 1 || Patos == 11 || Patos == 21 || Patos == 31 || Patos == 41 || Patos == 51)
                 {
                     if (TerrenoManager.instance.used1 == false)
                     {
@@ -270,18 +272,14 @@ public class Tienda : MonoBehaviour
                             }
                         }
                     }
-                    return;
                 }
+                GameManager.instance.partidaGuardada.dinero -= precioPato;
                 CerrarTienda();
             }
             else
             {
-                Debug.Log("No hay más espacio disponible");
+                Debug.Log("No te queda dinero");
             }
-        }
-        else if (GameManager.instance.partidaGuardada.dinero <= precioPato)
-        {
-            Debug.Log("No te queda dinero");
         }
     }
     public void GenerarGato()

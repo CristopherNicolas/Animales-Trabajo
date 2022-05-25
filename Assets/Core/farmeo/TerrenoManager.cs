@@ -30,5 +30,4 @@ public class TerrenoManager : MonoBehaviour
             TerrenoDisponible = true;
         }
     }
-
 }
