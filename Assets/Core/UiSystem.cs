@@ -24,16 +24,14 @@ public class UiSystem : MonoBehaviour
     {
         DescontarEstadisticas();
     }
-    public async void EnviarMensaje(string msj, float delay = 1, float animationTime = 1,float stayTime=3)
+    public async void EnviarMensaje(string msj, float delay = 1,float stayTime=3)
     {
         if (puedeEnviarAlFeed)
         {
             puedeEnviarAlFeed = false;
             await Task.Delay(TimeSpan.FromSeconds(delay));
             feed.text = msj;
-            feed.GetComponent<RectTransform>().DOMoveX(1000, animationTime);
             await Task.Delay(TimeSpan.FromSeconds(stayTime));
-            feed.GetComponent<RectTransform>().DOMoveX(-1000, animationTime);
             puedeEnviarAlFeed = true;
         }         
     }

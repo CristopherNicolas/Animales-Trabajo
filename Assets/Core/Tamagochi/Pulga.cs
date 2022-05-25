@@ -25,6 +25,7 @@ public class Pulga : MonoBehaviour
         if (!haSidoClickeada)
         {
             haSidoClickeada=true;
+            AudioManager.instance.PonerOneShotPulga();
             GameObject.Find("Tamagochi System").GetComponent<HerramientasTamagochi>().
             slider.value += 25;
             Debug.Log("pulga destruida");

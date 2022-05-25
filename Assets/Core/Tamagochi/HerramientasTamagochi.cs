@@ -98,15 +98,15 @@ public class HerramientasTamagochi : MonoBehaviour
             i = Random.Range(0, clipsAnimal.Count);
             animal.clip = clipsAnimal[i];
         }
-        while (clipsAnimal[i]==animal.clip);
+        while (clipsAnimal[i]== animal.clip);
         animal.Play();
     }
     public GameObject gotaAguaPrefab;
     public void AguaEfect()
     {
-        UiSystem.instance.EnviarMensaje("clickea las gotas", 0.4f,1,2);
+        UiSystem.instance.EnviarMensaje("clickea las gotas", 1,2);
         //caundo el jugador haga click en el animal apareceran 3 gotas
-        int range = Random.Range(2, 5),t=4;
+        int range = Random.Range(4, 7),t=4;
         Vector2 posicionParaSpawn(Vector2 ant)
         {
             int r = Random.Range(-1, 1);
@@ -130,7 +130,7 @@ public class HerramientasTamagochi : MonoBehaviour
     {
         int range= Random.Range(2,7);
         float multiplicador,escala;
-        UiSystem.instance.EnviarMensaje("clickea el alimento", 0f,0.5f,3);
+        UiSystem.instance.EnviarMensaje("clickea el alimento", 0f,3);
             await Task.Delay(System.TimeSpan.FromSeconds(0.5f));
         for (int i = 0; i < range; i++)
         {
@@ -156,12 +156,12 @@ public class HerramientasTamagochi : MonoBehaviour
            var obj= Instantiate(pulgaPrefab,randomPos,Quaternion.identity);
             obj.transform.parent = GameObject.Find("Canvas").transform;
         }
-        UiSystem.instance.EnviarMensaje("Usaste la peineta, elimina las pulgas",0.4f,1,2);
+        UiSystem.instance.EnviarMensaje("Usaste la peineta, elimina las pulgas",0.4f,2);
         slider.transform.GetComponent<RectTransform>().DOScale(5, 0.3f);
         slider.value += 10;
         if (slider.value >= 100)
         {
-            UiSystem.instance.EnviarMensaje("animal peinado", 0.4f, 1, 2);
+            UiSystem.instance.EnviarMensaje("animal peinado", 0.4f, 2);
             slider.value = 0;
             UiSystem.instance.diversion += 20;
             UiSystem.instance.UpdateUI();

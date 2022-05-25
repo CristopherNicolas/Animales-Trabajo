@@ -12,6 +12,7 @@ public class Galleta : MonoBehaviour
     public void Clickear()
     {
         UiSystem.instance.hambre += 2 * transform.localScale.x;
+        AudioManager.instance.PonerOneShotGalleta();
         Destroy(gameObject);
           
     }
