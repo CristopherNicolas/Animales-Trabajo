@@ -19,4 +19,9 @@ public class AudioManager : MonoBehaviour
     }
     public void PonerOneShotGalleta()=> audioSource.PlayOneShot(comerGalleta);
     public void PonerOneShotPulga()=> audioSource.PlayOneShot(pulgaSound);
+    public void PonerCancionAnimal(Animal animal)
+    {
+        audioSource.clip = animal.cancionAnimal;
+         audioSource.Play();
+    }
 }

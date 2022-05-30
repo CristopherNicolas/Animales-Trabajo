@@ -100,6 +100,7 @@ public class HerramientasTamagochi : MonoBehaviour
         }
         while (clipsAnimal[i]== animal.clip);
         animal.Play();
+        i = 0;
     }
     public GameObject gotaAguaPrefab;
     public void AguaEfect()
@@ -138,10 +139,11 @@ public class HerramientasTamagochi : MonoBehaviour
             await Task.Delay(System.TimeSpan.FromSeconds(1));
              var obj = Instantiate(galletaPrefab, spawnerOBJ.GetComponent<RectTransform>());
                RectTransform objRectT = obj.GetComponent<RectTransform>();
+            objRectT.SetParent(GameObject.Find("Canvas").transform);
                 objRectT.DOScale(Random.Range(0.2f, 1f),0);
                  escala = objRectT.localScale.x;
                   objRectT.DOMoveX(Random.Range(0, 1000), 0);
-            objRectT.DOMoveY(-500,10*objRectT.localScale.x);
+            objRectT.DOMoveY(-500,10*objRectT.localScale.x*2);
         }
     }
     public Slider slider;

@@ -23,6 +23,7 @@ public class TamagochiSystem : MonoBehaviour
          GameManager.instance.partidaGuardada.animalesEnTerrenos.Add(GameManager.instance.cat);
            bgController.CambiarBG(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());
         personaje.image.sprite = GameManager.instance.partidaGuardada.animalesEnTerrenos.First().imagenAnimal;
+        AudioManager.instance.PonerCancionAnimal(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());
         //cambiar stats
         UiSystem.instance.UpdateUI();
     }

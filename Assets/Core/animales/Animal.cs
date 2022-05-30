@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public abstract class Animal: MonoBehaviour
 {
     public Sprite imagenAnimal;
+    public AudioClip cancionAnimal;
     public Color colorParaBgSystem;
     public GRUPOANIMAL grupo;
     public virtual float ObtenerOro() => 1;
