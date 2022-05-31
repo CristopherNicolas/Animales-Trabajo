@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Terreno : MonoBehaviour
 {
-    public static Terreno instance;
     public float GananciasT1,GananciasT2,GananciasT3,GananciasT4, GananciasT5, GananciasT6;
+    public static Terreno instance;
 
     private void Awake()
     {
@@ -103,6 +103,7 @@ public class Terreno : MonoBehaviour
             GananciasT6 = 0f;
         }
     }
+
     IEnumerator GanarDineroT1()
     {
         yield return new WaitForSeconds(2f);

@@ -9,6 +9,7 @@ public class Tienda : MonoBehaviour
     public bool IsOpen, IsFull;
     public List<GameObject> Comprables;
     public List<GameObject> Terrenos;
+    public List<Text> ListaDePrecios;
     public int asignarTerreno, AnimalesEnT1, AnimalesEnT2, AnimalesEnT3, AnimalesEnT4, AnimalesEnT5, AnimalesEnT6;
     public float precioGato, precioPerro, precioPato, precioTigre, precioZorro, precioPollo;
     public static Tienda instance;
@@ -33,6 +34,12 @@ public class Tienda : MonoBehaviour
     public void FixedUpdate()
     {
         EspacioDisponible();
+        ListaDePrecios[0].text = "" + precioGato;
+        ListaDePrecios[1].text = "" + precioPerro;
+        ListaDePrecios[2].text = "" + precioPato;
+        ListaDePrecios[3].text = "" + precioTigre;
+        ListaDePrecios[4].text = "" + precioZorro;
+        ListaDePrecios[5].text = "" + precioPollo;
     }
 
     public void AbrirTienda()
