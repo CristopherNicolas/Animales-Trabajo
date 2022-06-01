@@ -45,5 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagenAnimal: {fileID: 21300000, guid: dcdef32d98c4e5d46b52bccf9f0d1de8, type: 3}
   cancionAnimal: {fileID: 0}
-  colorParaBgSystem: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  colorParaBgSystem: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+  colorPlataforma: {r: 0.8960051, g: 0.9056604, b: 0.68778926, a: 0}
   grupo: 1

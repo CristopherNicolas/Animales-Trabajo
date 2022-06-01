@@ -18,8 +18,9 @@ public class UiSystem : MonoBehaviour
         {
             instance = this;
             panelHerramientas = GameObject.Find("panel interaccion").GetComponent<RectTransform>();
-        }
+        } //singleton
     }
+
     private void Start()
     {
         DescontarEstadisticas();
@@ -58,8 +59,7 @@ public class UiSystem : MonoBehaviour
     }
     public void CerrarPanel() => panelHerramientas.DOMoveX(-500, 1);
     public void AbrirPanel() => panelHerramientas.DOMoveX(300, 1);
-
-      public  async void DescontarEstadisticas()
+    public  async void DescontarEstadisticas()
     {
         while (true)
         {

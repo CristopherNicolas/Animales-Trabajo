@@ -10,14 +10,15 @@ public delegate void Inter();
 public class HerramientasTamagochi : MonoBehaviour
 {
     public Inter inter;
-   public Texture2D cursorAgua, cursorAlimento, cursorPeineta,cursorDefault;
+    public Texture2D cursorAgua, cursorAlimento, cursorPeineta,cursorDefault;
     public ESTADOCURSOR eSTADOCURSOR = ESTADOCURSOR.DEFAUL;
+    public GameObject pulgaPrefab, galletaPrefab, spawnerOBJ, gotaAguaPrefab;
+
     private void Awake()
     {
         inter = new Inter(DefaultEfect);
         AsignarCursor(eSTADOCURSOR);
         slider.transform.DOScale(0, 0);
-        
     }
     public void Interactuar()
     {
@@ -70,7 +71,6 @@ public class HerramientasTamagochi : MonoBehaviour
             inter = new Inter(AguaEfect);
         }
         AsignarCursor(eSTADOCURSOR);
-
     }
     public void Peineta()   
     {
@@ -84,25 +84,20 @@ public class HerramientasTamagochi : MonoBehaviour
         {
             eSTADOCURSOR = ESTADOCURSOR.PEINETA;
              inter = new Inter(PeinetaEfect);
-
         }
         AsignarCursor(eSTADOCURSOR);
     }
     int i = 0;
     public AudioSource animal;
     public List<AudioClip> clipsAnimal;
-    public void DefaultEfect()
+    public ParticleSystem particulasMause;
+    public async void DefaultEfect()
     {
-        do
-        {
-            i = Random.Range(0, clipsAnimal.Count);
-            animal.clip = clipsAnimal[i];
-        }
-        while (clipsAnimal[i]== animal.clip);
-        animal.Play();
-        i = 0;
+      gotaAguaPrefab.transform.position = Input.mousePosition;
+        gotaAguaPrefab.gameObject.SetActive(true);
+        await Task.Delay(500);
+        gotaAguaPrefab.gameObject.SetActive(false);
     }
-    public GameObject gotaAguaPrefab;
     public void AguaEfect()
     {
         UiSystem.instance.EnviarMensaje("clickea las gotas", 1,2);
@@ -126,10 +121,9 @@ public class HerramientasTamagochi : MonoBehaviour
         }
           //cada gota tiene un numero, mientras mas alto el numero mas rapido desaparece
     }
-    public GameObject galletaPrefab,spawnerOBJ; 
     public async void alimentoEfect()
     {
-        int range= Random.Range(2,7);
+        int range= Random.Range(3,7);
         float multiplicador,escala;
         UiSystem.instance.EnviarMensaje("clickea el alimento", 0f,3);
             await Task.Delay(System.TimeSpan.FromSeconds(0.5f));
@@ -147,12 +141,11 @@ public class HerramientasTamagochi : MonoBehaviour
         }
     }
     public Slider slider;
-    public GameObject pulgaPrefab;
     public void PeinetaEfect()
     {
         //hacer que salten pulgas para que puedan serclickeadas 
         int random = Random.Range(0, 5);
-        Vector2 randomPos= new Vector2(Random.Range(231,1346),Random.Range(-370,430));
+        Vector2 randomPos= new Vector2(Random.Range(231,1346),Random.Range(-370,430)); //aqui esta el error de las pulgas.
         if (random>0)
         {
            var obj= Instantiate(pulgaPrefab,randomPos,Quaternion.identity);
@@ -171,8 +164,6 @@ public class HerramientasTamagochi : MonoBehaviour
         }
     }
 }
-
-
 public enum ESTADOCURSOR
 {
    DEFAUL,PEINETA,AGUA,ALIMENTO

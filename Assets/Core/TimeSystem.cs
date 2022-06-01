@@ -39,11 +39,9 @@ public class TimeSystem : MonoBehaviour
         }
         catch (NullReferenceException r)
         {
-           Debug.Log( r.ToString());
-            
             return;
-            throw;
         }
+       
     }
     public void AsignVar()
     {

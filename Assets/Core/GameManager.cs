@@ -14,15 +14,17 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-             DontDestroyOnLoad(gameObject);
-              //comprueba si es la primera vez jugando:
-             if(SaveSystem.ifIsFirstPlay())
+            DontDestroyOnLoad(gameObject);
+            //comprueba si es la primera vez jugando:
+            if (SaveSystem.ifIsFirstPlay())
             {
                 NewGame();
             }
-          else
-           LoadGame();
+            else
+
+                LoadGame();
         }
+        else Destroy(gameObject);
         Debug.Log(GameManager.instance.partidaGuardada);
     }
     public void LoadGame()=> partidaGuardada = SaveSystem.Load();

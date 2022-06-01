@@ -12,4 +12,11 @@ public class Save
     public List<float> gananciasPorTerreno;//Nominados en la script Terreno: GananciasT1,GananciasT2,GananciasT3,GananciasT4,GananciasT5,GananciasT6.
     public List<Animal> animalesEnTerrenos;
     public float dinero;
+
+    /////////////////////////////////////////////////////////////////
+    /// Parte Cris
+    /// 
+
+    public List<Animal> animalesEnTerrenoCris;  
+
 }

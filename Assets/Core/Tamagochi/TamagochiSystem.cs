@@ -13,13 +13,14 @@ public class TamagochiSystem : MonoBehaviour
     {
         bgController = GameObject.Find("Canvas").GetComponent<BgController>();
     }
-    private void Start()
+    private async void Start()
     {
         AsignarAnimal();                    
+        await bgController.AnimarColorBg();
     }
     public void AsignarAnimal()
     {
-        GameManager.instance.partidaGuardada.animalesEnTerrenos = new List<Animal>();
+      //  GameManager.instance.partidaGuardada.animalesEnTerrenos = new List<Animal>();
          GameManager.instance.partidaGuardada.animalesEnTerrenos.Add(GameManager.instance.cat);
            bgController.CambiarBG(GameManager.instance.partidaGuardada.animalesEnTerrenos.First());
         personaje.image.sprite = GameManager.instance.partidaGuardada.animalesEnTerrenos.First().imagenAnimal;

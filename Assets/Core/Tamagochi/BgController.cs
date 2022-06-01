@@ -6,7 +6,7 @@ using DG.Tweening;
 using System.Threading.Tasks;
 public class BgController : MonoBehaviour
 {
-   [SerializeField]Image bg;
+   [SerializeField]SpriteRenderer bg,plataforma;
     public Animal animalSeleccionado;
     public async Task AnimarColorBg()
     {
@@ -21,5 +21,6 @@ public class BgController : MonoBehaviour
     public void CambiarBG(Animal animalActual)
     {
         bg.color = animalActual.colorParaBgSystem;
+        plataforma.color = animalActual.colorPlataforma;
     }
 }
