@@ -13,10 +13,6 @@ public class Save
     public List<Animal> animalesEnTerrenos;
     public float dinero;
 
-    /////////////////////////////////////////////////////////////////
-    /// Parte Cris
-    /// 
 
-    public List<Animal> animalesEnTerrenoCris;  
 
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
+using System.Threading.Tasks;
 using UnityEngine.UI;
 
 public class VenderAnimales : MonoBehaviour
@@ -16,6 +18,7 @@ public class VenderAnimales : MonoBehaviour
         {
             GetComponent<RectTransform>().DOScale(0, 0);
             instance = this;
+            textoUi =GameObject.Find("feed").GetComponent<TMP_Text>();
         }
     }
     private void FixedUpdate()
@@ -55,7 +58,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Gatos == 0)
         {
-            Debug.Log("No tienes este animal");
+            MostrarMensaje("No tienes gatos para vender");
         }
         else
         {
@@ -113,7 +116,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Perros == 0)
         {
-            Debug.Log("No tienes este animal");
+            MostrarMensaje("No tienes perros para vender");
         }
         else
         {
@@ -171,7 +174,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Patos == 0)
         {
-            Debug.Log("No tienes este animal");
+            MostrarMensaje("No tienes patos para vender");
         }
         else
         {
@@ -229,7 +232,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Tigres == 0)
         {
-            Debug.Log("No tienes este animal");
+            MostrarMensaje("No tienes tigres para vender");
         }
         else
         {
@@ -277,6 +280,16 @@ public class VenderAnimales : MonoBehaviour
             }
         }
     }
+    [SerializeField]TMP_Text textoUi;
+    public async void MostrarMensaje(string mensaje)
+    {
+        textoUi.text = mensaje;
+        textoUi.DOColor(Color.white,1f);
+        await Task.Delay(1000);
+        textoUi.DOColor(Color.black,1f);
+        await Task.Delay(1000);
+        textoUi.text = "";
+    }
     public void VenderZorros()
     {
         if (TerrenoManager.instance.AnimalTerreno6 == "Zorro" && Tienda.instance.AnimalesEnT6 > 0 && Zorros > 0)
@@ -287,7 +300,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Zorros == 0)
         {
-            Debug.Log("No tienes este animal");
+           MostrarMensaje("No tienes zorros para vender");
         }
         else
         {
@@ -345,7 +358,7 @@ public class VenderAnimales : MonoBehaviour
         }
         else if (Pollos == 0)
         {
-            Debug.Log("No tienes este animal");
+            MostrarMensaje("No tienes pollos para vender");
         }
         else
         {

@@ -7,16 +7,11 @@ using System.Threading.Tasks;
 public class BgController : MonoBehaviour
 {
    [SerializeField]SpriteRenderer bg,plataforma;
-    public Animal animalSeleccionado;
-    public async Task AnimarColorBg()
+    public void AnimarColorBg() 
     {
-        while (true)
-        {
-        bg.DOColor(new Color(bg.color.r, bg.color.g-0.5f, bg.color.b, bg.color.a), 30);
-            await Task.Delay(System.TimeSpan.FromSeconds(30));
-        bg.DOColor(animalSeleccionado.colorParaBgSystem, 30);
-            await Task.Delay(System.TimeSpan.FromSeconds(30));
-        }
+        bg.DOColor(new Color(GameManager.instance.partidaGuardada.animalesEnTerrenos[0].colorParaBgSystem.r,
+        GameManager.instance.partidaGuardada.animalesEnTerrenos[0].colorParaBgSystem.g,
+        GameManager.instance.partidaGuardada.animalesEnTerrenos[0].colorParaBgSystem.b,1),15f);
     }
     public void CambiarBG(Animal animalActual)
     {

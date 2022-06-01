@@ -89,7 +89,6 @@ public class HerramientasTamagochi : MonoBehaviour
     }
     int i = 0;
     public AudioSource animal;
-    public List<AudioClip> clipsAnimal;
     public ParticleSystem particulasMause;
     public async void DefaultEfect()
     {
@@ -98,29 +97,24 @@ public class HerramientasTamagochi : MonoBehaviour
         await Task.Delay(500);
         gotaAguaPrefab.gameObject.SetActive(false);
     }
+    public List<GameObject> posicionesAgua; 
     public void AguaEfect()
     {
         UiSystem.instance.EnviarMensaje("clickea las gotas", 1,2);
-        //caundo el jugador haga click en el animal apareceran 3 gotas
         int range = Random.Range(4, 7),t=4;
-        Vector2 posicionParaSpawn(Vector2 ant)
-        {
-            int r = Random.Range(-1, 1);
-            if (r < 0)
-                return new Vector2(ant.x - 200, ant.y + 50);
-            else return new Vector2(ant.x + 200, ant.y);
-        }
+        //caundo el jugador haga click en el animal apareceran 3 gotas
         for (int i = 0; i < range; i++)
         {
-            GameObject obj = Instantiate(gotaAguaPrefab,posicionParaSpawn
-                (new Vector2(Random.Range(0,1000),Random.Range(-500,500))),Quaternion.identity);
-            obj.transform.SetParent(GameObject.Find("Canvas").transform);
+            GameObject obj = Instantiate(gotaAguaPrefab,(posicionesAgua[Random.Range(0,posicionesAgua.Count)].transform.position)
+              ,Quaternion.identity);
+                  obj.transform.SetParent(GameObject.Find("Canvas").transform);
                     RectTransform rt = obj.GetComponent<RectTransform>();
-            rt.DOScale(0, t);
+                  rt.DOScale(0, t);
             obj.GetComponent<Image>().DOColor(new Color(0, 0, 0, 0),t);
         }
           //cada gota tiene un numero, mientras mas alto el numero mas rapido desaparece
     }
+    public List<GameObject> posicionesAlimento;
     public async void alimentoEfect()
     {
         int range= Random.Range(3,7);
@@ -131,9 +125,9 @@ public class HerramientasTamagochi : MonoBehaviour
         {
             multiplicador = Random.Range(0.1f, 0.5f);
             await Task.Delay(System.TimeSpan.FromSeconds(1));
-             var obj = Instantiate(galletaPrefab, spawnerOBJ.GetComponent<RectTransform>());
+             var obj = Instantiate(galletaPrefab,posicionesAlimento[Random.Range(0,posicionesAlimento.Count)].transform.position,Quaternion.identity);
                RectTransform objRectT = obj.GetComponent<RectTransform>();
-            objRectT.SetParent(GameObject.Find("Canvas").transform);
+               objRectT.SetParent(GameObject.Find("Canvas").transform);
                 objRectT.DOScale(Random.Range(0.2f, 1f),0);
                  escala = objRectT.localScale.x;
                   objRectT.DOMoveX(Random.Range(0, 1000), 0);

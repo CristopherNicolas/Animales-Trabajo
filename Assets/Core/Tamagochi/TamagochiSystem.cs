@@ -16,7 +16,7 @@ public class TamagochiSystem : MonoBehaviour
     private async void Start()
     {
         AsignarAnimal();                    
-        await bgController.AnimarColorBg();
+         bgController.AnimarColorBg();
     }
     public void AsignarAnimal()
     {
