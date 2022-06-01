@@ -30,6 +30,7 @@ public class Tienda : MonoBehaviour
         TerrenoManager.instance.used1 = true;
         TerrenoManager.instance.AnimalTerreno1 = "Gato";
         TerrenoManager.instance.AnimalSprite1 = contenedor;
+        VenderAnimales.instance.Gatos = 1;
     }
     public void FixedUpdate()
     {
@@ -73,6 +74,7 @@ public class Tienda : MonoBehaviour
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Gatos += 1;
                     var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -83,6 +85,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Gato")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Gatos += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioGato;
                 }
                 else
@@ -91,6 +94,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Gatos += 1;
                         var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -101,6 +105,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Gato")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Gatos += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioGato;
                     }
                     else
@@ -109,6 +114,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Gatos += 1;
                             var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -119,6 +125,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Gato")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Gatos += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioGato;
                         }
                         else
@@ -127,6 +134,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Gatos += 1;
                                 var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -137,6 +145,7 @@ public class Tienda : MonoBehaviour
                             else if (AnimalesEnT4 < 10 && TerrenoManager.instance.AnimalTerreno4 == "Gato")
                             {
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Gatos += 1;
                                 GameManager.instance.partidaGuardada.dinero -= precioGato;
                             }
                             else
@@ -145,6 +154,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Gatos += 1;
                                     var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -155,6 +165,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Gato")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Gatos += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioGato;
                                 }
                                 else
@@ -163,6 +174,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Gatos += 1;
                                         var contenedor = Instantiate(Comprables[0], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -173,6 +185,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Gato")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Gatos += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioGato;
                                     }
                                     else
@@ -206,6 +219,7 @@ public class Tienda : MonoBehaviour
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Perros += 1;
                     var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -216,6 +230,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Perro")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Perros += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioPerro;
                 }
                 else
@@ -224,6 +239,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Perros += 1;
                         var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -234,6 +250,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Perro")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Perros += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioPerro;
                     }
                     else
@@ -242,6 +259,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Perros += 1;
                             var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -252,6 +270,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Perro")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Perros += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioPerro;
                         }
                         else
@@ -260,6 +279,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Perros += 1;
                                 var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -270,6 +290,7 @@ public class Tienda : MonoBehaviour
                             else if (AnimalesEnT4 < 10 && TerrenoManager.instance.AnimalTerreno4 == "Perro")
                             {
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Perros += 1;
                                 GameManager.instance.partidaGuardada.dinero -= precioPerro;
                             }
                             else
@@ -278,6 +299,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Perros += 1;
                                     var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -288,6 +310,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Perro")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Perros += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioPerro;
                                 }
                                 else
@@ -296,6 +319,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Perros += 1;
                                         var contenedor = Instantiate(Comprables[1], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -306,6 +330,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Perro")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Perros += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioPerro;
                                     }
                                     else
@@ -339,6 +364,7 @@ public class Tienda : MonoBehaviour
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Patos += 1;
                     var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -349,6 +375,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Pato")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Patos += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioPato;
                 }
                 else
@@ -357,6 +384,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Patos += 1;
                         var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -367,6 +395,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Pato")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Patos += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioPato;
                     }
                     else
@@ -375,6 +404,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Patos += 1;
                             var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -385,6 +415,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Pato")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Patos += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioPato;
                         }
                         else
@@ -393,6 +424,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Patos += 1;
                                 var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -403,6 +435,7 @@ public class Tienda : MonoBehaviour
                             else if (AnimalesEnT4 < 10 && TerrenoManager.instance.AnimalTerreno4 == "Pato")
                             {
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Patos += 1;
                                 GameManager.instance.partidaGuardada.dinero -= precioPato;
                             }
                             else
@@ -411,6 +444,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Patos += 1;
                                     var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -421,6 +455,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Pato")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Patos += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioPato;
                                 }
                                 else
@@ -429,6 +464,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Patos += 1;
                                         var contenedor = Instantiate(Comprables[2], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -439,6 +475,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Pato")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Patos += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioPato;
                                     }
                                     else
@@ -472,6 +509,7 @@ public class Tienda : MonoBehaviour
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Tigres += 1;
                     var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -482,6 +520,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Tigre")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Tigres += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioTigre;
                 }
                 else
@@ -490,6 +529,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Tigres += 1;
                         var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -500,6 +540,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Tigre")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Tigres += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioTigre;
                     }
                     else
@@ -508,6 +549,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Tigres += 1;
                             var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -518,6 +560,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Tigre")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Tigres += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioTigre;
                         }
                         else
@@ -526,6 +569,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Tigres += 1;
                                 var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -536,6 +580,7 @@ public class Tienda : MonoBehaviour
                             else if (AnimalesEnT4 < 10 && TerrenoManager.instance.AnimalTerreno4 == "Tigre")
                             {
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Tigres += 1;
                                 GameManager.instance.partidaGuardada.dinero -= precioPato;
                             }
                             else
@@ -544,6 +589,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Tigres += 1;
                                     var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -554,6 +600,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Tigre")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Tigres += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioTigre;
                                 }
                                 else
@@ -562,6 +609,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Tigres += 1;
                                         var contenedor = Instantiate(Comprables[3], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -572,6 +620,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Tigre")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Tigres += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioTigre;
                                     }
                                     else
@@ -605,6 +654,7 @@ public class Tienda : MonoBehaviour
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Zorros += 1;
                     var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -615,6 +665,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Zorro")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Zorros += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioZorro;
                 }
                 else
@@ -623,6 +674,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Zorros += 1;
                         var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -633,6 +685,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Zorro")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Zorros += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioZorro;
                     }
                     else
@@ -641,6 +694,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Zorros += 1;
                             var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -651,6 +705,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Zorro")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Zorros += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioZorro;
                         }
                         else
@@ -659,6 +714,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Zorros += 1;
                                 var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -677,6 +733,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Zorros += 1;
                                     var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -687,6 +744,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Zorro")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Zorros += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioZorro;
                                 }
                                 else
@@ -695,6 +753,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Zorros += 1;
                                         var contenedor = Instantiate(Comprables[4], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -705,6 +764,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Zorro")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Zorros += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioZorro;
                                     }
                                     else
@@ -732,12 +792,13 @@ public class Tienda : MonoBehaviour
         }
         else
         {
-            if (GameManager.instance.partidaGuardada.dinero >= precioZorro)
+            if (GameManager.instance.partidaGuardada.dinero >= precioPollo)
             {
                 if (AnimalesEnT1 == 0)
                 {
                     asignarTerreno = 0;
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Pollos += 1;
                     var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                     TerrenoManager.instance.AnimalSprite1 = contenedor;
@@ -748,6 +809,7 @@ public class Tienda : MonoBehaviour
                 else if (AnimalesEnT1 < 10 && TerrenoManager.instance.AnimalTerreno1 == "Pollo")
                 {
                     AnimalesEnT1 += 1;
+                    VenderAnimales.instance.Pollos += 1;
                     GameManager.instance.partidaGuardada.dinero -= precioPollo;
                 }
                 else
@@ -756,6 +818,7 @@ public class Tienda : MonoBehaviour
                     {
                         asignarTerreno = 1;
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Pollos += 1;
                         var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                         TerrenoManager.instance.AnimalSprite2 = contenedor;
@@ -766,6 +829,7 @@ public class Tienda : MonoBehaviour
                     else if (AnimalesEnT2 < 10 && TerrenoManager.instance.AnimalTerreno2 == "Pollo")
                     {
                         AnimalesEnT2 += 1;
+                        VenderAnimales.instance.Pollos += 1;
                         GameManager.instance.partidaGuardada.dinero -= precioPollo;
                     }
                     else
@@ -774,6 +838,7 @@ public class Tienda : MonoBehaviour
                         {
                             asignarTerreno = 2;
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Pollos += 1;
                             var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                             contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                             TerrenoManager.instance.AnimalSprite3 = contenedor;
@@ -784,6 +849,7 @@ public class Tienda : MonoBehaviour
                         else if (AnimalesEnT3 < 10 && TerrenoManager.instance.AnimalTerreno3 == "Pollo")
                         {
                             AnimalesEnT3 += 1;
+                            VenderAnimales.instance.Pollos += 1;
                             GameManager.instance.partidaGuardada.dinero -= precioPollo;
                         }
                         else
@@ -792,6 +858,7 @@ public class Tienda : MonoBehaviour
                             {
                                 asignarTerreno = 3;
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Pollos += 1;
                                 var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                 contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                 TerrenoManager.instance.AnimalSprite4 = contenedor;
@@ -802,6 +869,7 @@ public class Tienda : MonoBehaviour
                             else if (AnimalesEnT4 < 10 && TerrenoManager.instance.AnimalTerreno4 == "Pollo")
                             {
                                 AnimalesEnT4 += 1;
+                                VenderAnimales.instance.Pollos += 1;
                                 GameManager.instance.partidaGuardada.dinero -= precioPollo;
                             }
                             else
@@ -810,6 +878,7 @@ public class Tienda : MonoBehaviour
                                 {
                                     asignarTerreno = 4;
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Pollos += 1;
                                     var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                     contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                     TerrenoManager.instance.AnimalSprite5 = contenedor;
@@ -820,6 +889,7 @@ public class Tienda : MonoBehaviour
                                 else if (AnimalesEnT5 < 10 && TerrenoManager.instance.AnimalTerreno5 == "Pollo")
                                 {
                                     AnimalesEnT5 += 1;
+                                    VenderAnimales.instance.Pollos += 1;
                                     GameManager.instance.partidaGuardada.dinero -= precioPollo;
                                 }
                                 else
@@ -828,6 +898,7 @@ public class Tienda : MonoBehaviour
                                     {
                                         asignarTerreno = 5;
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Pollos += 1;
                                         var contenedor = Instantiate(Comprables[5], Terrenos[asignarTerreno].transform.position, Terrenos[asignarTerreno].transform.rotation);
                                         contenedor.transform.parent = Terrenos[asignarTerreno].transform;
                                         TerrenoManager.instance.AnimalSprite6 = contenedor;
@@ -838,6 +909,7 @@ public class Tienda : MonoBehaviour
                                     else if (AnimalesEnT6 < 10 && TerrenoManager.instance.AnimalTerreno6 == "Pollo")
                                     {
                                         AnimalesEnT6 += 1;
+                                        VenderAnimales.instance.Pollos += 1;
                                         GameManager.instance.partidaGuardada.dinero -= precioPollo;
                                     }
                                     else
