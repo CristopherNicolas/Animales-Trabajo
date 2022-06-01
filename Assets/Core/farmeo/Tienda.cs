@@ -32,6 +32,15 @@ public class Tienda : MonoBehaviour
         TerrenoManager.instance.AnimalSprite1 = contenedor;
         VenderAnimales.instance.Gatos = 1;
     }
+    public void Update()
+    {
+        EliminarSprite1();
+        EliminarSprite2();
+        EliminarSprite3();
+        EliminarSprite4();
+        EliminarSprite5();
+        EliminarSprite6();
+    }
     public void FixedUpdate()
     {
         EspacioDisponible();
@@ -942,6 +951,54 @@ public class Tienda : MonoBehaviour
             IsFull = false;
         }
     }
-    
+    public void EliminarSprite1()
+    {
+        if (TerrenoManager.instance.AnimalSprite1 && AnimalesEnT1 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite1);
+            TerrenoManager.instance.used1 = false;
+        }
+    }
+    public void EliminarSprite2()
+    {
+        if (TerrenoManager.instance.AnimalSprite2 && AnimalesEnT2 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite2);
+            TerrenoManager.instance.used2 = false;
+        }
+    }
+    public void EliminarSprite3()
+    {
+        if (TerrenoManager.instance.AnimalSprite3 && AnimalesEnT3 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite3);
+            TerrenoManager.instance.used3 = false;
+        }
+    }
+    public void EliminarSprite4()
+    {
+        if (TerrenoManager.instance.AnimalSprite4 && AnimalesEnT4 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite4);
+            TerrenoManager.instance.used4 = false;
+        }
+    }
+    public void EliminarSprite5()
+    {
+        if (TerrenoManager.instance.AnimalSprite5 && AnimalesEnT5 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite5);
+            TerrenoManager.instance.used5 = false;
+        }
+    }
+    public void EliminarSprite6()
+    {
+        if (TerrenoManager.instance.AnimalSprite6 && AnimalesEnT6 == 0)
+        {
+            Destroy(TerrenoManager.instance.AnimalSprite6);
+            TerrenoManager.instance.used6 = false;
+        }
+    }
+
 
 }
