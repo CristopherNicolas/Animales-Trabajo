@@ -4030,9 +4030,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665268255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 086a1886059a0f14498323419c1641f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f3f34a1cb24e8e4cb3d0c388b2d3146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Terrenos:
+  - {fileID: 158702903}
+  - {fileID: 924862912}
+  - {fileID: 949586679}
+  - {fileID: 36491878}
+  - {fileID: 1023282572}
+  - {fileID: 343420620}
+  used1: 0
+  used2: 0
+  used3: 0
+  used4: 0
+  used5: 0
+  used6: 0
+  TerrenoDisponible: 0
+  ContadorT1: {fileID: 1072795088}
+  ContadorT2: {fileID: 1404843928}
+  ContadorT3: {fileID: 2080808400}
+  ContadorT4: {fileID: 294936751}
+  ContadorT5: {fileID: 940952476}
+  ContadorT6: {fileID: 524360761}
+  AnimalSprite1: {fileID: 0}
+  AnimalSprite2: {fileID: 0}
+  AnimalSprite3: {fileID: 0}
+  AnimalSprite4: {fileID: 0}
+  AnimalSprite5: {fileID: 0}
+  AnimalSprite6: {fileID: 0}
+  AnimalTerreno1: 
+  AnimalTerreno2: 
+  AnimalTerreno3: 
+  AnimalTerreno4: 
+  AnimalTerreno5: 
+  AnimalTerreno6: 
 --- !u!4 &1665268257
 Transform:
   m_ObjectHideFlags: 0
@@ -4108,12 +4140,12 @@ MonoBehaviour:
   IsOpen: 0
   IsFull: 0
   Comprables:
-  - {fileID: 6700349987282631472, guid: 119af1775c8556e4fa167a88b35b3c0b, type: 3}
-  - {fileID: 1470488001119298886, guid: 4586ae7cf1c96a74b9868b95b591490e, type: 3}
-  - {fileID: 2968768400779369865, guid: f86e45799caff3b4d80319c18b27f6e2, type: 3}
-  - {fileID: 7908533053800115306, guid: 9c34fb2b961642643a7da8f7a6c56f70, type: 3}
-  - {fileID: 2678418054636370517, guid: 3812f83064e660d46a0e128246e50991, type: 3}
-  - {fileID: 3952753513488717155, guid: 18cfad6a7ac3e6342be9f5f423f59f01, type: 3}
+  - {fileID: 6700349987282631472, guid: 999efdfa481e4ce4ca488721f5ff0e61, type: 3}
+  - {fileID: 1470488001119298886, guid: 4734070b14684424888abab79317bae8, type: 3}
+  - {fileID: 2968768400779369865, guid: 9b0905f05fe83854d980f71d8328bcb8, type: 3}
+  - {fileID: 7908533053800115306, guid: ee472e377d15d4040a652b3335174474, type: 3}
+  - {fileID: 2678418054636370517, guid: 323aaffc3ec4838409621ec87a8dd8c4, type: 3}
+  - {fileID: 3952753513488717155, guid: 8134a357b39881e49a3754dcd3fb4e81, type: 3}
   Terrenos:
   - {fileID: 158702903}
   - {fileID: 924862912}

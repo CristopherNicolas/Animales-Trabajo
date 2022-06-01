@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: FarmScene
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: ccecceb9fab6e384c9fcbd9591812d7e, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 3952753513488717155, guid: 8134a357b39881e49a3754dcd3fb4e81, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 6700349987282631472, guid: 999efdfa481e4ce4ca488721f5ff0e61, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2968768400779369865, guid: 9b0905f05fe83854d980f71d8328bcb8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2678418054636370517, guid: 323aaffc3ec4838409621ec87a8dd8c4, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2174671243924851557, guid: 7f92fbc805fe69b47926839829f7775f, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 60125170627424878, guid: ac1e586a5e8e65b44b412c24609afd1b, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: e4d75208c9c78d34488f322b67e442e6, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7908533053800115306, guid: ee472e377d15d4040a652b3335174474, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 1470488001119298886, guid: 4734070b14684424888abab79317bae8, type: 3}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  addToDefaults: 0
