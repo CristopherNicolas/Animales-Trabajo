@@ -1,30 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using UnityEngine.UI;
 
 public class CambiarTamagochi : MonoBehaviour
 {
+  public List<Animal> animales;
     public int terrenoActual = 0;
     public TamagochiSystem tamagochiSystem;
+   public  AutoSave autoSave;
     // cambiar tamagochi al presionar los botones
+  public int i=0;
     public void CambiarAnimal()
     {
-     // guardar stats
-        if (terrenoActual < GameManager.instance.partidaGuardada.animalesEnTerrenos.Count)
+        i+=1;
+        if(i>=animales.Count)
         {
-            terrenoActual += 1;
+            i=0;
         }
-        else
+        if(i!=0)
         {
-            terrenoActual = 0;
-        }
-        if (terrenoActual > GameManager.instance.partidaGuardada.animalesEnTerrenos.Count)
-        {
-            terrenoActual = 0;
-            return;
-        }
-            tamagochiSystem.personaje.tipoDeAnimal =
-            GameManager.instance.partidaGuardada.animalesEnTerrenos[terrenoActual];
-            tamagochiSystem.personaje.image.sprite = GameManager.instance.partidaGuardada.animalesEnTerrenos[terrenoActual].imagenAnimal;
+         tamagochiSystem.personaje.image.transform.localScale = new Vector3(0.34f,0.42f,0.42f);
+        } 
+        else  tamagochiSystem.personaje.image.transform.localScale = Vector3.one;
+        tamagochiSystem.personaje.image.sprite = animales[i].imagenAnimal;
+        tamagochiSystem.personaje.tipoDeAnimal = animales[i];
+        tamagochiSystem.AsignarAnimal(animales[i]);
     }
 }

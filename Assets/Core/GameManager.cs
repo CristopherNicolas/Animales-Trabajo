@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            //comprueba si es la primera vez jugando:
             if (SaveSystem.ifIsFirstPlay())
             {
                 NewGame();
@@ -23,6 +22,15 @@ public class GameManager : MonoBehaviour
             else
 
                 LoadGame();
+                if(partidaGuardada.animalEnTerreno==null)
+                {
+                    partidaGuardada.animalEnTerreno = new List<string>();
+                    Debug.Log("flag 1");
+                if(partidaGuardada.animalEnTerreno.Count==0)
+                {
+                    partidaGuardada.animalEnTerreno.Add("Gato");
+                }
+                }
         }
         else Destroy(gameObject);
         Debug.Log(GameManager.instance.partidaGuardada);

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comerGalleta: {fileID: 8300000, guid: 845b8a91d009fa34b9297936f9a8bbff, type: 3}
   pulgaSound: {fileID: 8300000, guid: faa13bf8d4360d44e83266d4fdab74a4, type: 3}
+  uiSelect: {fileID: 8300000, guid: ee1945f53230e124783bc45b57b5da75, type: 3}
   audioSource: {fileID: 876871884763618044}
 --- !u!82 &876871884763618044
 AudioSource:
@@ -57,9 +58,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: d169fa3b00109994591fd14dd44f3e37, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.729
   m_Pitch: 1
   Loop: 0
   Mute: 0

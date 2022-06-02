@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    public AudioClip comerGalleta,pulgaSound;
+    public AudioClip comerGalleta,pulgaSound,uiSelect,gatoSound,irEscena1,irEscena2;
     public AudioSource audioSource;
 
     private void Awake()
@@ -20,9 +20,5 @@ public class AudioManager : MonoBehaviour
     }
     public void PonerOneShotGalleta()=> audioSource.PlayOneShot(comerGalleta);
     public void PonerOneShotPulga()=> audioSource.PlayOneShot(pulgaSound);
-    public void PonerCancionAnimal(Animal animal)
-    {
-        audioSource.clip = animal.cancionAnimal;
-         audioSource.Play();
-    }
+    
 }

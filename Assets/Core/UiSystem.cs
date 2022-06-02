@@ -38,8 +38,12 @@ public class UiSystem : MonoBehaviour
     }
     public void UpdateUI()
     {
-        stats.text = @$"diversion:{diversion}    hambre: {hambre}      sed: {sed}";
+        if(diversion<0) diversion=0; if(hambre<0) hambre=0; if(sed<0) sed=0;
+        stats.text = @$"diversion:{diversion}    hambre: {(int)hambre}      sed: {sed}";
         stats.GetComponent<RectTransform>().DOPunchScale(new Vector3(0.25f, 0.25f, 0.25f),1);
+        GameManager.instance.partidaGuardada.diversion= diversion;
+        GameManager.instance.partidaGuardada.hambre = hambre;
+        GameManager.instance.partidaGuardada.sed = sed;
     }
     public void Alimentar()
     {
@@ -57,8 +61,8 @@ public class UiSystem : MonoBehaviour
         await Task.Delay(System.TimeSpan.FromSeconds(tiempoFuera));
         panelHerramientas.DOMoveX(300, 1);
     }
-    public void CerrarPanel() => panelHerramientas.DOMoveX(-500, 1);
-    public void AbrirPanel() => panelHerramientas.DOMoveX(300, 1);
+    public void CerrarPanel() => panelHerramientas.DOMoveX(3, 1);
+    public void AbrirPanel() => panelHerramientas.DOMoveX(1, 1);
     public  async void DescontarEstadisticas()
     {
         while (true)

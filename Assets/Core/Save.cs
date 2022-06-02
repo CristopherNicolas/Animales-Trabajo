@@ -11,8 +11,8 @@ public class Save
     public List<int> animalesPorTerreno; //Nominados en la script Tienda: public int AnimalesEnT1, AnimalesEnT2,AnimalesEn3,AnimalesEnT4,AnimalesEnT5;AnimalesEnT6.
     public List<float> gananciasPorTerreno;//Nominados en la script Terreno: GananciasT1,GananciasT2,GananciasT3,GananciasT4,GananciasT5,GananciasT6.
     public List<Animal> animalesEnTerrenos;
-    public float dinero;
-
+    public float dinero,diversion,hambre,sed;
+    
 
 
 }

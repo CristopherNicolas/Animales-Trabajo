@@ -6,15 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {    
+  AutoSave autoSave;
     public void IrAEscena (int escenaIndex)
     {
         if  (escenaIndex==1 && SceneManager.GetActiveScene().buildIndex==2)
         {
-            //for (int i=0;i<Terreno.instance.)
-          //  GameManager.instance.partidaGuardada.animalesEnTerrenos=
-            
+              autoSave=GameObject.Find("AutoSave").GetComponent<AutoSave>();
+               autoSave.SaveAnimals();
+                AudioManager.instance.audioSource.PlayOneShot(AudioManager.instance.irEscena1);
+                SceneManager.LoadScene(escenaIndex);
+                return;
         }
      SceneManager.LoadScene(escenaIndex);
-
+      AudioManager.instance.audioSource.PlayOneShot(AudioManager.instance.irEscena2);
     }
 }

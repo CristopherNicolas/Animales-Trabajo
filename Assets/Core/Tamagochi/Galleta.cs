@@ -15,7 +15,7 @@ public class Galleta : MonoBehaviour
     }
     public void Clickear()
     {
-        UiSystem.instance.hambre += 2 * transform.localScale.x;
+        UiSystem.instance.hambre += 3 * transform.localScale.x*10;
          AudioManager.instance.PonerOneShotGalleta();
         GetComponent<Image>().sprite = null;
            iParticleSystem.Play();

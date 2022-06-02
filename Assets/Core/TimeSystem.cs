@@ -8,7 +8,7 @@ public class TimeSystem : MonoBehaviour
 {
     public Del dele;
     TMP_Text textTime;
-    int minutos, horas;
+    int minutos, horas; string pmOrAM;
     public static TimeSystem instance;
     private void Awake()
     {
@@ -35,7 +35,8 @@ public class TimeSystem : MonoBehaviour
         try
         {
             textTime = GameObject.Find("TimeControllerText").GetComponent<TMP_Text>();
-            textTime.text = $"{horas}:{minutos}";
+         //   textTime.text = $"{horas}:{minutos}";
+              textTime.text = $"{DateTime.Now.ToString()}";
         }
         catch (NullReferenceException r)
         {

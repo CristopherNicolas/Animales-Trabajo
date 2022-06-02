@@ -18,7 +18,7 @@ public class VenderAnimales : MonoBehaviour
         {
             GetComponent<RectTransform>().DOScale(0, 0);
             instance = this;
-            textoUi =GameObject.Find("feed").GetComponent<TMP_Text>();
+            textoUi =GameObject.Find("feed").GetComponent<Text>();
         }
     }
     private void FixedUpdate()
@@ -280,13 +280,11 @@ public class VenderAnimales : MonoBehaviour
             }
         }
     }
-    [SerializeField]TMP_Text textoUi;
+    [SerializeField]Text textoUi;
     public async void MostrarMensaje(string mensaje)
     {
         textoUi.text = mensaje;
-        textoUi.DOColor(Color.white,1f);
         await Task.Delay(1000);
-        textoUi.DOColor(Color.black,1f);
         await Task.Delay(1000);
         textoUi.text = "";
     }

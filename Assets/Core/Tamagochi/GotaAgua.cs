@@ -10,7 +10,7 @@ public class GotaAgua : MonoBehaviour
     }
     public void OnClicked()
     {
-        UiSystem.instance.DarAgua(1);
+        UiSystem.instance.DarAgua(2);
         UiSystem.instance.UpdateUI();
         Destroy(gameObject);
     }
